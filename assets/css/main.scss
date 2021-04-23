@@ -1,0 +1,789 @@
+---
+---
+
+:root {
+  font-size:1rem;
+}
+
+html,  body  {
+    margin:  0;
+    padding:  0;
+}
+
+/* || Pratt typography */
+
+@font-face {
+font-family: 'ApercuBold';
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot/fonts/apercu-bold-webfont.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.svg#ApercuBold") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.ttf") format("truetype");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  'ApercuBoldItalic';
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.svg#ApercuBoldItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.ttf") format("truetype");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  'ApercuItalic';
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.svg#ApercuItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.ttf") format("truetype");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  'ApercuRegular';
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.svg#ApercuRegular") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.ttf") format("truetype");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  'ApercuMedium';
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.svg#ApercuMedium") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.ttf") format("truetype");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  'ApercuMediumItalic';
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.svg#ApercuMediumItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.ttf") format("truetype");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  'Entypo';
+    src:  url("https://www.pratt.edu/assets/fonts/entypo.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/entypo.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/entypo.svg#Entypo") format("svg"),  url("https://www.pratt.edu/assets/fonts/entypo.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/entypo.ttf") format("truetype");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  "LyonRegular";
+    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff2") format("woff2");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  "LyonItalic";
+    src:  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff2") format("woff2");
+    font-weight:  normal;
+    font-style:  normal;
+}
+@font-face  {
+    font-family:  "LyonBold";
+    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot");
+    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff2") format("woff2");
+    font-weight:  normal;
+    font-style:  normal;
+}
+
+h1,  h2,  h3,  h4,  h5,  h6  {
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-weight:  normal;
+}
+p,  pre  {
+    font-family:  "LyonRegular",  Helvetica,  Arial,  sans-serif;
+    margin:  1.125em 0;
+    line-height:  1.55em;
+    font-size:  1.04em;
+    letter-spacing:  normal;
+}
+p a  {
+    color:  #000000;
+    padding:  2px;
+    border-bottom:  1px solid #0C77D4;
+    border-bottom-width:  1px;
+    border-bottom-style:  solid;
+    border-bottom-color:  #0C77D4;
+    box-shadow:  inset 0 -1px 0 #0C77D4;
+    text-decoration:  none;
+}
+p a:hover  {
+    color:  #FFFFFF;
+    background-color:  #0C77D4;
+    padding:  2px;
+    transition:  background .15s cubic-bezier(.33,  .66,  .66,  1);
+    transition-property:  background;
+    transition-duration:  0.15s;
+    transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    transition-delay:  0s;
+}
+blockquote  {
+    margin:  1.5em 40px;
+}
+h1  {
+    font-size:  2.75em;
+    line-height:  1.5em;
+    margin-top:  0.13636em;
+    margin-bottom:  0.13636em;
+    line-height:  1em;
+    text-transform:  uppercase;
+    letter-spacing:  0.09em;
+}
+@media (max-width: 47.938em)  {
+    h1  {
+    font-size:  2.25em;
+}
+}
+h2  {
+    font-size:  1.5rem;
+    font-weight:  500;
+    line-height:  1.2;
+    color:  inherit;
+    margin-top:  0;
+    letter-spacing:  0.09em;
+    text-transform:  uppercase;
+
+}
+h3  {
+    font-size:  2.25em;
+    line-height:  1.5em;
+    margin-top:  0.15em;
+    margin-bottom:  0.15em;
+    line-height:  1.25em;
+    letter-spacing:  normal;
+}
+@media (max-width: 47.938em)  {
+    h3  {
+    font-size:  1.5em;
+}
+}
+h4  {
+    font-size:  1em;
+    line-height:  2em;
+    margin-top:  0.25em;
+    margin-bottom:  0.25em;
+    line-height:  1.25em;
+    letter-spacing:  0.09em;
+    text-transform:  uppercase;
+}
+@media (max-width: 47.938em)  {
+    h4  {
+    font-size:  1em;
+}
+}
+h5  {
+    font-size:  1.04em;
+    line-height:  1.2em;
+    margin-top:  0.12em;
+    margin-bottom:  0.12em;
+    line-height:  1.25em;
+}
+@media (max-width: 47.938em)  {
+    h5  {
+    font-size:  0.9375em;
+}
+}
+h6  {
+    font-size:  0.95em;
+    line-height:  1.57895em;
+    margin-top:  0.15789em;
+    margin-bottom:  0.15789em;
+    line-height:  1.25em;
+}
+@media (max-width: 47.938em)  {
+    h6  {
+    font-size:  0.7125em;
+}
+}
+abbr[title]  {
+    border-bottom:  1px dotted;
+}
+b,  strong  {
+    font-family:  "LyonBold",  "LyonRegular",  Helvetica,  Arial,  sans-serif;
+}
+dfn  {
+    font-style:  italic;
+}
+hr  {
+    -webkit-box-sizing:  content-box;
+    -moz-box-sizing:  content-box;
+    box-sizing:  content-box;
+    color:  black;
+    background-color:  black;
+}
+mark  {
+    background:  #ff0;
+    color:  #000;
+}
+code,  kbd,  pre,  samp  {
+    font-family:  monospace,  serif;
+    _font-family:  'courier new',  monospace;
+    font-size:  1em;
+}
+pre  {
+    white-space:  pre;
+    white-space:  pre-wrap;
+    word-wrap:  break-word;
+}
+q  {
+    quotes:  "\201C" "\201D" "\2018" "\2019";
+}
+small  {
+    font-size:  80%;
+}
+sub,  sup  {
+    font-size:  75%;
+    line-height:  0;
+    position:  relative;
+    vertical-align:  baseline;
+}
+sup  {
+    top:  -0.5em;
+}
+sub  {
+    bottom:  -0.25em;
+}
+dl,  menu,  ol,  ul  {
+    margin:  1.3em 0;
+}
+dd  {
+    margin:  0 0 0 40px;
+}
+menu,  ol,  ul  {
+    padding:  0 0 0 40px;
+}
+nav ul,  nav ol  {
+    list-style:  none;
+    list-style-image:  none;
+}
+p  {
+    font-size:  1em;
+}
+a  {
+    color:  #0C77D4;
+    -webkit-transition-property:  color;
+    -moz-transition-property:  color;
+    -o-transition-property:  color;
+    transition-property:  color;
+    -webkit-transition-duration:  0.2s;
+    -moz-transition-duration:  0.2s;
+    -o-transition-duration:  0.2s;
+    transition-duration:  0.2s;
+    word-wrap:  break-word;
+    font-size:  1em;
+    text-decoration:  none;
+    letter-spacing:  normal;
+}
+
+/* || Library Styles */
+
+ .logo-style  {
+    height:  2.1rem;
+    margin-top:  -10px;
+}
+@media only screen and (max-width:380px)  {
+    .logo-style  {
+    height:  2rem;
+}
+}
+@media only screen and (max-width:320px)  {
+    .logo-style  {
+    height:  1.6rem;
+}
+}
+.navbar-nav  {
+    min-height:  25px;
+    padding:  0;
+}
+
+ul.navbar-nav{
+  margin:0;
+}
+
+.nav-item  {
+    color:  white;
+    margin:0 .5em;
+    text-decoration:  none;
+    font-size:  .95em;
+    white-space: nowrap;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+}
+header  {
+    position:  relative;
+    width:  100%;
+    min-height:  auto;
+    text-align:  center;
+    color:  #fff;
+    background-image:  url(img/heading1.jpg);
+    background-color:  black;
+    background-position:  center;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    background-size:  cover;
+}
+.header2  {
+    background-image:  url(img/campus1.jpg);
+}
+.header3  {
+    background-image:  url(img/pi_bg4.jpg);
+}
+.header4  {
+    background-image:  url(img/pi_bg2.jpg);
+}
+.header5  {
+    background-image:  url(img/pi_bg5.jpg);
+}
+
+ul  {
+    list-style:  none;
+    padding-left:  0;
+}
+
+footer  {
+    width:  100%;
+    padding:  25px;
+    line-height:  1.6em;
+}
+@media (max-width:600px){
+    footer-content  {
+    padding:  100px;
+}
+}
+
+.card  {
+    border:  0px;
+}
+.navbar-custom  {
+    background-color:  rgba(30,  30,  30,  0.88);
+    border-bottom:  5px solid #FFB900;
+    box-shadow:  0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-custom .navbar-nav .nav-link  {
+    color:  white;
+    font-size:  1.1rem;
+    letter-spacing:  .08em;
+}
+.navbar-custom .nav-item.active .nav-link,  .navbar-custom .nav-item:hover .nav-link  {
+    color:  rgb(255,  185,  0);
+}
+
+.input-group > .form-control.search-bar  {
+    border-top-left-radius:  2rem;
+    border-bottom-left-radius:  2rem;
+    height:  50px;
+    background-color:  white;
+    border: 1px solid white;
+}
+ .input-group > .form-control.search-bar:focus{
+  border: 1px solid rgb(0, 123, 255 / 50%);
+}
+.input-group-append > button.btn.search-button  {
+    border-top-right-radius:  2rem;
+    border-bottom-right-radius:  2rem;
+    background-color:  white;
+    height:  50px;
+}
+.search-button:hover  {
+
+    color:  black;
+    height:  50px;
+}
+.lib-heading  {
+    text-align:  center;
+    margin-top:  30px;
+}
+
+@media (min-width:1000px)  {
+    .form-style  {
+    position:  relative;
+    width:  100%;
+    min-height:  auto;
+    text-align:  center;
+    color:  #fff;
+    padding-top:  30px;
+    background-position:  center;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    border-radius:  3px;
+    background-size:  cover;
+}
+}
+.jumbotron  {
+    border-width:  1px;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    border-color:  black;
+}
+.btn-primary  {
+    margin:  2px;
+    border-width:  1px;
+    border-color:  black;
+    border-radius:0;
+    background-color:  white;
+    color:  black;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+}
+.btn-primary:hover  {
+    margin:  2px;
+    border-width:  1px;
+    border-color:  black;
+    border-radius:  0px;
+    background-color:  #0C77D4;
+    color:  white;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+}
+
+.footer-links  {
+    text-transform:  none;
+    font-size:  1.05em;
+    line-height:  1.5em;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+}
+.search-box  {
+    margin-top:  100px;
+    margin-bottom:  50px;
+    padding:  10px;
+    width:  90%;
+    margin-left:  5%;
+    border-radius:  5px;
+    color:  white;
+}
+@media (min-width: 1000px)  {
+    .search-box  {
+    margin-top:  130px;
+    margin-bottom:  80px;
+    padding:  10px;
+    width:  60%;
+    margin-left:  20%;
+    color:  white;
+}
+}
+.home-page-splash  {
+    margin-top:  100px;
+    margin-bottom:  50px;
+    padding:  10px;
+    width:  90%;
+    margin-left:  5%;
+    border-radius:  5px;
+    color:  white;
+   }
+
+@media (min-width:  1000px)  {
+    .home-page-splash  {
+    margin-top:  180px;
+    margin-bottom:  100px;
+    padding:  10px;
+    width:  60%;
+    margin-left:  20%;
+    color:  white;
+}
+}
+.blog  {
+    line-height:  1;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+}
+
+[data-toggle="collapse"] i:before  {
+    content:  "\f068";
+}
+
+[data-toggle="collapse"].collapsed i:before  {
+    content:  "\f067";
+}
+
+.nav-link:hover  {
+    color:  #FFB900;
+}
+
+.image  {
+    display:  block;
+    width:  100%;
+    height:  auto;
+}
+.overlay  {
+    position:  absolute;
+    top:  0;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    height:  100%;
+    width:  100%;
+    opacity:  0;
+    transition:  .5s ease;
+    background-color:  #0C77D4;
+}
+#overlay-archives  {
+    position:  absolute;
+    top:  0;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    height:  100%;
+    width:  100%;
+    opacity:  0;
+    transition:  .5s ease;
+    background-color:  #0C77D4;
+}
+#overlay-exhibits  {
+    position:  absolute;
+    top:  0;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    height:  100%;
+    width:  100%;
+    opacity:  0;
+    transition:  .5s ease;
+    background-color:  #FFB900;
+}
+#overlay-special  {
+    position:  absolute;
+    top:  0;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    height:  100%;
+    width:  inherit;
+    opacity:  0;
+    transition:  .5s ease;
+    background-color:  #F26531;
+}
+.centered-img-text  {
+    position:  absolute;
+    top:  50%;
+    color:  white;
+    left:  50%;
+    transform:  translate(-50%,  -50%);
+    z-index:  999;
+}
+.com:hover #overlay-archives  {
+    opacity:  .85;
+}
+.com:hover #overlay-exhibits  {
+    opacity:  .85;
+}
+.com:hover #overlay-special  {
+    opacity:  .85;
+}
+.com h3  {
+    text-shadow:  0 0 4px #000000;
+}
+.com  {
+    position:  relative;
+    display:  -ms-flexbox;
+    display:  flex;
+    -ms-flex-direction:  column;
+    flex-direction:  column;
+    min-width:  0;
+    word-wrap:  break-word;
+    background-color:  black;
+    background-clip:  border-box;
+    border-radius:  0.25rem;
+}
+img  {
+    max-width:  100%;
+    flex-shrink:  0;
+}
+.image-text  {
+    color:  white;
+    font-size:  1.3rem;
+    position:  absolute;
+    top:  50%;
+    left:  50%;
+    -webkit-transform:  translate(-50%,  -50%);
+    -ms-transform:  translate(-50%,  -50%);
+    transform:  translate(-50%,  -50%);
+    text-align:  center;
+}
+.logo  {
+    display:  inline-block;
+    margin-top:  .3em;
+}
+.logo a  {
+    background:  url(img/logo-white.png) no-repeat;
+    background-size:  90px 30px;
+    display:  block;
+    height:  30px;
+    width:  90px;
+    overflow:  hidden;
+    text-indent:  -1999px;
+    z-index:  1000;
+    background-repeat:  no-repeat;
+    -webkit-transition-duration:  0.2s;
+    -moz-transition-duration:  0.2s;
+    -o-transition-duration:  0.2s;
+    transition-duration:  0.2s;
+    -webkit-transition-property:  height;
+    -moz-transition-property:  height;
+    -o-transition-property:  height;
+    transition-property:  height;
+    -webkit-transition-property:  width;
+    -moz-transition-property:  width;
+    -o-transition-property:  width;
+    transition-property:  width;
+    -webkit-transition-property:  margin;
+    -moz-transition-property:  margin;
+    -o-transition-property:  margin;
+    transition-property:  margin;
+}
+.svg .logo a  {
+    background-image:  url(img/logo-white.png);
+}
+.logo a:hover  {
+    background-image:  url(img/logo-gold.png);
+}
+.svg .logo a:hover  {
+    background-image:  url(img/logo-gold.png);
+}
+@media (max-width: 70em)  {
+    .logo a  {
+    background-size:  90px 30px;
+    height:  30px;
+    width:  90px;
+    background-position:  50% 50%;
+}
+}
+@media screen and (max-width: 956px)  {
+    .logo  {
+    padding-top:  .75em;
+    padding-bottom:  .5em;
+    margin-top:  0;
+    float:  none;
+    margin-left:  auto;
+    margin-right:  auto;
+    display:  block;
+    width:  100px;
+    margin-bottom:  0;
+}
+}
+.ie8 .logo a,  .lt-ie8 .logo a  {
+    background-image:  url(img/logo-black-ie.png);
+    width:  90px;
+    height:  30px;
+    background-size:  auto;
+}
+.ie8 .logo a:hover,  .lt-ie8 .logo a:hover  {
+    background-image:  url(img/logo-gold-ie.png);
+}
+
+.search-box li a  {
+    color:  white;
+    font-size:  1rem;
+    padding:  5px 15px 5px 15px;
+}
+
+.account:hover  {
+    border-color:  #FFB900;
+}
+
+.account  {
+    color:  white;
+    border-color:  white;
+    border-style:  solid;
+    border-width:  1px;
+    border-radius:  50px;
+}
+.dropdown-item  {
+    color:  black;
+}
+.dropdown-item:hover  {
+    color:  white;
+    background-color:  #0C77D4;
+}
+
+.directory-style{
+  font-family: "ApercuRegular",  Helvetica,  Arial,  sans-serif;
+  padding-bottom:10px;
+}
+.hide  {
+    position:  absolute;
+    top:  -9999px ;
+    left:  -9999px;
+}
+
+.alert  {
+    border-width:  2px;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-size:  1rem;
+    margin:  10px;
+}
+.closebtn  {
+    margin-left:  15px;
+    color:  white;
+    font-weight:  bold;
+    float:  right;
+    font-size:  1.3rem;
+    line-height:  20px;
+    cursor:  pointer;
+    transition:  0.3s;
+}
+.closebtn:hover  {
+    color:  black;
+}
+ .s-lc-time  {
+    padding-left:  12px;
+}
+.card-header  {
+    background-color:  white;
+}
+.btn-link  {
+    color:  #0C77D4;
+}
+
+.expert-tool {
+  width: 150px;
+  height: 150px;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.expert-tool i{
+display:block;
+padding-bottom:.4em;
+}
+@media (max-width: 767px) {
+  .expert-tool {
+      width: 100%;
+      height: 5%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      font-size: 1em;
+      display: inline-block;
+      line-height: 1em;
+  }
+}
+
+div#s-lg-widget-1579290774229 > ul > li > a {
+  font-size:  1.05em;
+  line-height:  1.5em;
+  font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+}
+
+.pratt-btn{
+  font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+	background-color:#FFB900;
+	margin:1rem;
+	padding: 1.25rem;
+	border-radius:5px;
+	color:black;
+display:block;
+	text-align:center;
+        transition-duration: 0.2s;}
+
+.pratt-btn:hover{
+    background-color:#0C77D4;
+    color:white;
+    text-decoration:none;
+        }
+
+/*lib-chat button style*/
+
+button.s-lch-widget-float-btn{
+box-shadow:none;
+background-color: transparent;
+-webkit-filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, .3));
+filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, .3));
+cursor: pointer;
+}
+
+.s-lch-widget-float.open{
+z-index:9000;
+}
