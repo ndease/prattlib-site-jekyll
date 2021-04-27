@@ -1,17 +1,46 @@
 ---
-title: Home
+title: Pratt Institute Libraries
 ---
 
 <!DOCTYPE html>
 <html>
   <head>
-   <title>{{ page.title }}</title>
     {% include head.html %}
+    <title>{{ page.title }}</title>
   </head>
+  <body>
+
   <header>
         {% include nav.html %}
+        <!-- Alert Message below. Uncomment and enter message in content attribute to display-->
+        {% include alert.html%}
+        <!--end Alert Message-->
+        <div class="container">
+          <div class="row">
+          <div class="home-page-splash" id="search">
+          <h1 style="text-align:left; text-shadow: 2px 2px 4px #000000;">RESEARCH & DISCOVER</h1>
+     <script type="text/javascript" src="https://imageserver.ebscohost.com/branding/tabbedsearch/js/FormProcessing.js"></script>
+     <form action="https://search.ebscohost.com/login.aspx" method="get" onsubmit="ebscoPreProcess(this)">
+     <input name="search_prefix" type="hidden" value="" /> <input name="direct" type="hidden" value="true" />
+     <input name="scope" type="hidden" value="site" /> <input name="site" type="hidden" value="eds-live" />
+     <input name="authtype" type="hidden" value="ip,guest" />
+     <input name="custid" type="hidden" value="s8440772" />
+     <input name="groupid" type="hidden" value="main" />
+     <input name="profile" type="hidden" value="eds" />
+     <input name="bquery" type="hidden" value="" />
+     <div class="input-group input-group-lg">
+     <input aria-label="Search through library collections" name="uquery" class="form-control py=2 shadow search-bar" placeholder="Find books, articles, guides & more" type="search" />
+     <span class="input-group-append">
+     <button aria-label="library search" type="submit" value="Search" class="btn btn-outline-secondary border-0 search-button"><i class="fa fa-search"></i></button>
+     </span>
+     </div>
+     </form>
+           <a class="advanced-search" href="https://search.ebscohost.com/login.aspx?direct=true&authtype=ip,guest&custid=s8440772&setup=1&groupid=main&profile=eds">Advanced Search</a>
+          </div>
+
+            </div>
+         </div>
   </header>
-  <body>
     <main id="main">
         <div class="container">
  <div class="row">
@@ -20,7 +49,7 @@ title: Home
         <div class="container">
             <div class="row">
                 <h2 class="hide">Common Tasks</h2>
-                <div class="col-lg-8 col-sm-12 mb-12">
+                <div class="col-lg-8 col-sm-12 mb-12 mt-3">
                     <div class="card">
                         <div class="card-body">
                             <div>
@@ -61,14 +90,14 @@ title: Home
         <!-- spotlights -->
 
         <div>
-            <div class="container" style="text-align:center; margin-top:50px;">
+            <div class="container" class="text-center">
                 <h2>Explore</h2>
                 <hr><br>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://libguides.pratt.edu/archives">
                             <div class="com">
-                                <img src="img/archives.jpg" class="image " alt="">
+                                <img src="img/archives.jpg" class="image " alt>
                                 <h3 class="centered-img-text">Archives</h3>
                                 <div id="overlay-archives">
                                 </div>
@@ -78,8 +107,8 @@ title: Home
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://pratt.libcal.com">
                             <div class="com">
-                                <img src="img/exhibits.jpg" class="image " alt="">
-                                <h3 class="centered-img-text" style="text-align:center;">Events & Exhibits</h3>
+                                <img src="img/exhibits.jpg" class="image " alt>
+                                <h3 class="centered-img-text text-center">Events & Exhibits</h3>
                                 <div id="overlay-exhibits">
                                 </div>
                             </div>
@@ -88,7 +117,7 @@ title: Home
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://connectny.info/" target="_blank">
                             <div class="com">
-                                <img src="img/collects.jpg" class="image " alt="">
+                                <img src="img/collects.jpg" class="image " alt>
                                 <h3 class="centered-img-text">ConnectNY</h3>
                                 <div id="overlay-special">
                                 </div>
