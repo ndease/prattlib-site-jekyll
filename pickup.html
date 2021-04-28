@@ -1,0 +1,164 @@
+---
+title: Pickup - Pratt Institute Libraries
+permalink: /pickup/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{ page.title }}</title>
+{% include head.html %}
+</head>
+<body>
+{% include header.html %}
+<main id="main">
+<div class="container">
+  <!-- Page Heading -->
+  <h1 class="lib-heading">Contact-free Pickup</h1> <hr>
+ <div class="row">
+   <div class = "col-lg-6 col-md-6 col-sm-12">
+     <div class="card" style="padding:2em;">
+     <i style="text-align:center; margin-bottom:.5em;" class="fas fa-3x fa-user-clock"></i>
+    <h2 class="card-title" style="text-align:center;">Schedule a Time</h2><hr>
+<p class="card-text">Please select a time slot below to schedule your pick up. If there are no timeslots available today, please select another date.
+Having trouble? Use the "ask-a-librarian" chat on the right to ask for help or give us a call at (718) 636-3704.</p>
+
+     <script src="https://api3.libcal.com/js/equipment.min.js"></script>
+     <script>
+     jQuery(function(){
+        jQuery("#eq_17982").LibCalEquipmentBooking({iid: 4676, gid: 17982, eid: 0, width: 560, height: 680});
+     });
+     </script>
+     <!-- Place the following link anywhere in your page. Make sure the id "eq_17982" matches with the above code: jQuery("#eq_17982")  //-->
+     <button id="eq_17982" href="#"><i class="far fa-calendar-plus"></i>&nbsp;&nbsp;Schedule your Pickup Time</button>
+     <!-- Below is optional button styling  //-->
+     <style>
+     #eq_17982 {
+       background-color: #FFB900;
+       border-radius: 4px;
+       border: 0px solid;
+       color: #333333;
+       padding: 8px 20px;
+       cursor: pointer;
+      font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
+     }
+     #eq_17982:hover, #eq_17982:active, #eq_17982:focus {
+           background-color: #0090d0;
+           color:white;
+     }
+
+     </style>
+   </div>
+   <div class="jumbotron" style="text-align:center;">
+   <h3 class="display-5 text-muted"><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;You must follow the campus access checklist before visiting us</h3>
+<br>
+     <a class="btn btn-primary" href="https://www.pratt.edu/coronavirus/health-and-safety/campus-access/" target="_blank" role="button">See Campus Access Checklist&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+ </div>
+   </div>
+ <div class="col-lg-6 col-md-6 col-small-12">
+      <div class="card" style="padding:2em;">
+   <i style="text-align:center;  margin-bottom:.5em;" class="fas fa-3x fa-question-circle"></i>
+   <h2 class="card-title" style="text-align:center;">Frequently Asked Questions</h2>
+   <hr>
+     <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="fa" aria-hidden="true"></i>
+              &nbsp;&nbsp;Where should I go to pick up?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+        <p>The email notice you received indicates the pickup location. The email subject will be "Circulation Notice from Pratt Libraries."</p>
+        <a class="btn btn-primary" target="_blank" href="https://www.pratt.edu/the-institute/visit-pratt/maps-and-directions/directions/">Directions to Brooklyn Campus</a>
+        <a class="btn btn-primary" target="_blank" href="https://www.pratt.edu/the-institute/visit-pratt/maps-and-directions/directions-manhattan/">Directions to Manhattan Campus (4th Floor)</a>
+      </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fa" aria-hidden="true"></i>
+              &nbsp;&nbsp;How long does the pickup process take?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+<p>Once approved, the pickup appointment can take as little as a few minutes. Please show up to the library at the beginning of your appointment reservation. Be sure to wear a mask, stand six feet apart, and observe Pratt's
+  <a href="https://www.pratt.edu/coronavirus/health-and-safety/campus-access/" target="_blank">Campus Access Checklist.</a></p>
+</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fa" aria-hidden="true"></i>
+              &nbsp;&nbsp;How do I return the item when I'm done?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <p> <strong>Books & DVDs</strong><br>
+              You can return your books to the book drop in front of the library in Brooklyn, or in front of the 4th floor library at PMC. If you are in the city but not able to come onto campus, you can return your books to the public safety officer at the 200 Willoughby entrance to the Brooklyn campus, or at the entrance desk at PMC. Or you can mail them to us at the following address. The "media mail" rate at the US Post Office, will probably be your least expensive option!<br>
+<br>
+Pratt Institute Libraries<br>
+200 Willoughby Avenue<br>
+Brooklyn, NY 11205<br>
+<br>
+If you have any questions or if your situation isn't covered by these options please feel free to contact us using the library chat service, or email libref@pratt.edu.
+                <br>
+                <br>
+                <strong>Equipment</strong><br>
+                <p>Equipment returns must be scheduled in advance and delivered in person. Please schedule a time to return your equipment before or on the due date. <a href="https://libguides.pratt.edu/equipment/return" target="_blank">Return Equipment</a></p>
+ </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <i class="fa" aria-hidden="true"></i>
+              &nbsp;&nbsp; Can I reschedule my pickup later?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+<p>You will receive an email confirming your appointment time. This email will contain a link to cancel your appointment if needed. From there, you can schedule another pickup time from the link in your initial email notice, email subject: "Circulation Notice from Pratt Libraries." If you want to cancel a hold on an item, please reach out to us at <a href="mailto:libref@pratt.edu">libref@pratt.edu</a>.
+         </div>
+        </div>
+      </div>
+      <div class="card">
+      <div class="card-header" id="headingFive">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <i class="fa" aria-hidden="true"></i>
+            &nbsp;&nbsp;How many Items can I pick up at a time?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+        <div class="card-body">
+       <p>You can pickup as many items as you have requested and are confirmed available for pickup. Feel free to request several items on our <a href="https://cat.pratt.edu" target="_blank">catalog</a> and wait to receive email confirmations that they are all available. Then click the link in the email notification and select one pickup time.
+       </p>
+
+
+      </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</main>
+{% include footer.html %}
+<script>
+document.getElementById("custom-header").className = "header" + Math.floor(Math.random() * 6);
+</script>
+</body>
+</html>
