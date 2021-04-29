@@ -1,0 +1,37 @@
+---
+title: Services - Pratt Institute Libraries
+permalink: /services/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{ page.title }}</title>
+{% include head.html %}
+</head>
+<body>
+{% include header.html %}
+<main id="main">
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Heading -->
+        <h1 class="lib-heading">Whoa there</h1>
+        <hr>
+        <div class="row">
+          <div class="mx-auto">
+              <div>
+                <div id="notFound">
+                  <br>
+                  <br>
+                  <p>Uh oh! Page not found. Please <a href="/">return to the homepage</a> or <a href="https://library.pratt.edu/contact/">ask a librarian</a> for help.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</main>
+{% include footer.html %}
+<script>
+document.getElementById("custom-header").className = "header" + Math.floor(Math.random() * 6);
+</script>
+</body>
+</html>
