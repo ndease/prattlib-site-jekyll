@@ -3,7 +3,7 @@ title: Pratt Institute Libraries
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     {% include head.html %}
     <title>{{ page.title }}</title>
@@ -99,7 +99,7 @@ title: Pratt Institute Libraries
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://libguides.pratt.edu/archives">
                             <div class="com">
-                                <img src="img/archives.jpg" class="image " alt>
+                                <img src="{{absolute_url}}/img/archives.jpg" class="image " alt>
                                 <h3 class="centered-img-text">Archives</h3>
                                 <div id="overlay-archives">
                                 </div>
@@ -109,7 +109,7 @@ title: Pratt Institute Libraries
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://pratt.libcal.com">
                             <div class="com">
-                                <img src="img/exhibits.jpg" class="image " alt>
+                                <img src="{{absolute_url}}/img/exhibits.jpg" class="image " alt>
                                 <h3 class="centered-img-text text-center">Events & Exhibits</h3>
                                 <div id="overlay-exhibits">
                                 </div>
@@ -119,7 +119,7 @@ title: Pratt Institute Libraries
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://connectny.info/" target="_blank">
                             <div class="com">
-                                <img src="img/collects.jpg" class="image " alt>
+                                <img src="{{absolute_url}}/img/collects.jpg" class="image " alt>
                                 <h3 class="centered-img-text">ConnectNY</h3>
                                 <div id="overlay-special">
                                 </div>
@@ -211,7 +211,6 @@ title: Pratt Institute Libraries
         <!--endinsta-->
  </div>
     </main>
-
 {% include footer.html %}
   </body>
 </html>
