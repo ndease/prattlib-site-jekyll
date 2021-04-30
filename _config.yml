@@ -1,3 +1,13 @@
+# Site settings
+title: Pratt Institute Libraries
+tagline: "Research and Discover"
+description: "The mission of the Pratt Institute Libraries is to provide outstanding service and access to a resource-rich environment that facilitates critical thinking and creative teaching and learning in the Pratt community."
+keywords: Brooklyn, New York City, Pratt Institute, Art, Architecture, Design, Information, art library
+email: ndease@pratt.edu
+# for markup
+featured-image: "/img/heading1.jpg"
+featured-image-alt: "Pratt Institute Libraries in winter"
+
 # Where things are
 source              : .
 destination         : ./_site
@@ -43,7 +53,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-url                 : https://library.pratt.edu
+url                 : http://lib-dev.pratt.edu
 baseurl             :
 show_dir_listing    : false
 
