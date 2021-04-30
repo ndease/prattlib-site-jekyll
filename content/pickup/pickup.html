@@ -1,53 +1,45 @@
 ---
-title: Equipment Pickup - Pratt Institute Libraries
-permalink: /pickup-equipment/
+title: Pickup - Pratt Institute Libraries
+permalink: /pickup/
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>{{ page.title }}</title>
-{% include head.html %}
-</head>
-<body>
-{% include header.html %}
 <main id="main">
 <div class="container">
   <!-- Page Heading -->
-  <h1 class="lib-heading">Contact-free Pickup <hr>
-  <span class="text-muted h3" style="text-align:center;">Equipment</span></h1>
+  <h1 class="lib-heading">Contact-free Pickup</h1> <hr>
  <div class="row">
    <div class = "col-lg-6 col-md-6 col-sm-12">
      <div class="card" style="padding:2em;">
      <i style="text-align:center; margin-bottom:.5em;" class="fas fa-3x fa-user-clock"></i>
     <h2 class="card-title" style="text-align:center;">Schedule a Time</h2><hr>
 <p class="card-text">Please select a time slot below to schedule your pick up. If there are no timeslots available today, please select another date.
-Having trouble? Reach out to us at equipment.library@pratt.edu or call (718) 636-3626.</p>
+Having trouble? Use the "ask-a-librarian" chat on the right to ask for help or give us a call at (718) 636-3704.</p>
 
-<script src="https://api3.libcal.com/js/equipment.min.js"></script>
-<script>
-jQuery(function(){
-   jQuery("#eq_19012").LibCalEquipmentBooking({iid: 4676, gid: 19012, eid: 0, width: 560, height: 680});
-});
-</script>
-<!-- Place the following link anywhere in your page. Make sure the id "eq_19012" matches with the above code: jQuery("#eq_19012")  //-->
-<button id="eq_19012" href="#"><i class="far fa-calendar-plus"></i>&nbsp;&nbsp;Schedule your Pickup Time</button>
-<small style="margin-top:1.5em;" class="text-muted">Feeling productive? You can also <a target="_blank" href="https://libguides.pratt.edu/equipment/return">pre-schedule your Equipment Return Time.</a> No pressure! You will receive an email notice to do this near the end of your loan.</small>
-<!-- Below is optional button styling  //-->
-<style>
-#eq_19012 {
-  background-color: #FFB900;
-  border-radius: 4px;
-  border: 0px solid;
-  color: #333333;
-  padding: 8px 20px;
-  cursor: pointer;
- font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
-}
-#eq_19012:hover, #eq_19012:active, #eq_19012:focus {
-  background-color: #0090d0;
-  color:white;
-}
-</style>
+     <script src="https://api3.libcal.com/js/equipment.min.js"></script>
+     <script>
+     jQuery(function(){
+        jQuery("#eq_17982").LibCalEquipmentBooking({iid: 4676, gid: 17982, eid: 0, width: 560, height: 680});
+     });
+     </script>
+     <!-- Place the following link anywhere in your page. Make sure the id "eq_17982" matches with the above code: jQuery("#eq_17982")  //-->
+     <button id="eq_17982" href="#"><i class="far fa-calendar-plus"></i>&nbsp;&nbsp;Schedule your Pickup Time</button>
+     <!-- Below is optional button styling  //-->
+     <style>
+     #eq_17982 {
+       background-color: #FFB900;
+       border-radius: 4px;
+       border: 0px solid;
+       color: #333333;
+       padding: 8px 20px;
+       cursor: pointer;
+      font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
+     }
+     #eq_17982:hover, #eq_17982:active, #eq_17982:focus {
+           background-color: #0090d0;
+           color:white;
+     }
+
+     </style>
    </div>
    <div class="jumbotron" style="text-align:center;">
    <h3 class="display-5 text-muted"><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;You must follow the campus access checklist before visiting us</h3>
@@ -72,8 +64,9 @@ jQuery(function(){
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
-        <p>Please visit the Brooklyn Campus Library on schedule. Upon arriving at the building, have your Pratt ID card ready. You will call the desk via the number listed on the door using your own cellphone (preferred) OR you may buzz in via the pad at the door. After verification of your appointment time, you will be granted entry to the lobby and a staff member will instruct you how to locate and pick up your reserved equipment.</p>
+        <p>The email notice you received indicates the pickup location. The email subject will be "Circulation Notice from Pratt Libraries."</p>
         <a class="btn btn-primary" target="_blank" href="https://www.pratt.edu/the-institute/visit-pratt/maps-and-directions/directions/">Directions to Brooklyn Campus</a>
+        <a class="btn btn-primary" target="_blank" href="https://www.pratt.edu/the-institute/visit-pratt/maps-and-directions/directions-manhattan/">Directions to Manhattan Campus (4th Floor)</a>
       </div>
       </div>
 
@@ -98,12 +91,23 @@ jQuery(function(){
           <h2 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               <i class="fa" aria-hidden="true"></i>
-              &nbsp;&nbsp;How do I return the item(s) when I'm done?
+              &nbsp;&nbsp;How do I return the item when I'm done?
             </button>
           </h2>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
           <div class="card-body">
+            <p> <strong>Books & DVDs</strong><br>
+              You can return your books to the book drop in front of the library in Brooklyn, or in front of the 4th floor library at PMC. If you are in the city but not able to come onto campus, you can return your books to the public safety officer at the 200 Willoughby entrance to the Brooklyn campus, or at the entrance desk at PMC. Or you can mail them to us at the following address. The "media mail" rate at the US Post Office, will probably be your least expensive option!<br>
+<br>
+Pratt Institute Libraries<br>
+200 Willoughby Avenue<br>
+Brooklyn, NY 11205<br>
+<br>
+If you have any questions or if your situation isn't covered by these options please feel free to contact us using the library chat service, or email libref@pratt.edu.
+                <br>
+                <br>
+                <strong>Equipment</strong><br>
                 <p>Equipment returns must be scheduled in advance and delivered in person. Please schedule a time to return your equipment before or on the due date. <a href="https://libguides.pratt.edu/equipment/return" target="_blank">Return Equipment</a></p>
  </div>
         </div>
@@ -119,54 +123,29 @@ jQuery(function(){
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
           <div class="card-body">
-<p>You will receive an email confirming your appointment time. This email will contain a link to cancel your appointment if needed. From there, you can schedule another pickup time from the link in your initial email notice, email subject: "Circulation Notice from Pratt Libraries." If you want to cancel a hold, please reach out to us at <a href="mailto:equipment.library@pratt.edu">equipment.library@pratt.edu</a> or call (718) 636-3626</a>.
+<p>You will receive an email confirming your appointment time. This email will contain a link to cancel your appointment if needed. From there, you can schedule another pickup time from the link in your initial email notice, email subject: "Circulation Notice from Pratt Libraries." If you want to cancel a hold on an item, please reach out to us at <a href="mailto:libref@pratt.edu">libref@pratt.edu</a>.
          </div>
         </div>
       </div>
       <div class="card">
-      <div class="card-header" id="headingSix">
+      <div class="card-header" id="headingFive">
         <h2 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
             <i class="fa" aria-hidden="true"></i>
-            &nbsp;&nbsp;Can I borrow equipment for the weekend?
+            &nbsp;&nbsp;How many Items can I pick up at a time?
           </button>
         </h2>
       </div>
-      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
         <div class="card-body">
-       <p>If you need equipment over the weekend, please make sure to place your pickup appointment no later than 11:00AM on Friday.
+       <p>You can pickup as many items as you have requested and are confirmed available for pickup. Feel free to request several items on our <a href="https://cat.pratt.edu" target="_blank">catalog</a> and wait to receive email confirmations that they are all available. Then click the link in the email notification and select one pickup time.
        </p>
+
+
       </div>
       </div>
     </div>
-    <div class="card">
-    <div class="card-header" id="headingSeven">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          <i class="fa" aria-hidden="true"></i>
-          &nbsp;&nbsp;How long does it take for approval?
-        </button>
-      </h2>
-    </div>
-    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-      <div class="card-body">
-<p>If you think there might be a problem with your request, please check the following:
-  <ul>
-    <li>Make sure that emails from the libraries did not go to the spam folder (to be sure you always receive these, add "equipment.library@pratt.edu" and "alerts@mail.libcal.com" to your email contact list)</li>
-    <li>If you have recently made your request for equipment or for a pickup appointment, give it a bit of time. Each step takes a little while.</li>
-    <li>If it has been more than two business days and you have not received any updates, please reach out to us at equipment.library@pratt.edu and let us know and we will assist you.</li>
-  </ul>
-</p>.
-     </div>
-    </div>
-  </div>
 </div>
 </div>
 </div>
 </main>
-{% include footer.html %}
-<script>
-document.getElementById("custom-header").className = "header" + Math.floor(Math.random() * 6);
-</script>
-</body>
-</html>
