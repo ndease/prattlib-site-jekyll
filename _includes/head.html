@@ -1,7 +1,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Library Website">
+      <title>{{ page.title }}</title>
+      <meta http-equiv="Content-Language" content="en-us" >
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Open Graph Metadata -->
+      <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+      <meta property="og:site_name" content="{{ site.title | escape }}" />
+      <meta property="og:description" content="{{ site.description | escape }}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="{{ site.featured-image | absolute_url }}" />
+      <meta property="og:image:alt" content="{{ site.featured-image-alt | escape }}" />
+      <meta property="og:url" content="{{ page.url | absolute_url }}" />
+      <meta property="og:locale" content="en_US" />
 <!-- BootStrap CDN-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <!-- FontAwesome -->
@@ -14,5 +24,3 @@
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-5L5JVFC');</script>
-<!-- InstagramFeed -->
-      <script src="https://library.pratt.edu/js/jquery.instagramFeed.min.js"></script>
