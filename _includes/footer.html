@@ -113,13 +113,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <!-- Bootstrap Fallback -->
 <div id="bootstrapCssTest" class="collapse"></div>
- <script>
-   $(function() {
-     if ($('#bootstrapCssTest').is(":visible")) {
-       $("head").prepend('<link rel="stylesheet" href="css/bootstrap.min.css">');
-     }
-   });
- </script>
- <script>
- document.getElementById("custom-header").className = "header" + Math.floor(Math.random() * 6);
- </script>
+<script src="{{ '/js/bootstrap-css-fallback.js' | absolute_url | append: cacheBust }}"></script>
+ <script src="{{ '/js/random-bg.js' | absolute_url | append: cacheBust }}"></script>
