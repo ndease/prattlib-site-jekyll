@@ -9,23 +9,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% include nav.html %}
     <div class="container">
         <div class="row">
-            <div class="search-box" id="search">
-              <script src="https://imageserver.ebscohost.com/branding/tabbedsearch/js/FormProcessing.js"></script>
-<form action="https://search.ebscohost.com/login.aspx" method="get" onsubmit="ebscoPreProcess(this)">
-<input name="search_prefix" type="hidden" value="" /> <input name="direct" type="hidden" value="true" />
-<input name="scope" type="hidden" value="site" /> <input name="site" type="hidden" value="eds-live" />
-<input name="authtype" type="hidden" value="ip,guest" />
-<input name="custid" type="hidden" value="s8440772" />
-<input name="groupid" type="hidden" value="main" />
-<input name="profile" type="hidden" value="eds" />
-<input name="bquery" type="hidden" value="" />
-<div class="input-group input-group-lg">
-<input aria-label="Search through library collections" name="uquery" class="form-control py=2 shadow search-bar" placeholder="Find books, articles, guides & more" type="search" />
-<span class="input-group-append">
-<button aria-label="library search" type="submit" value="Search" class="btn btn-outline-secondary border-0 search-button"><i class="fa fa-search"></i></button>
-</span>
-</div>
-</form>
+            <div class="search-box">
+              <!-- EBSCO Search Box Begins -->
+              <form action="https://searchbox.ebsco.com/search/">
+                <input name="schemaId" value="search" type="hidden" />
+                <input name="custid" value="s8440772" type="hidden" />
+                <input name="groupid" value="main" type="hidden" />
+                <input name="profid" value="eds" type="hidden" />
+                <input name="authtype" value="ip,guest" type="hidden" />
+                <input name="scope" value="site" type="hidden" />
+                <input name="site" value="eds-live" type="hidden" />
+                <input name="direct" value="true" type="hidden" />
+                <div class="input-group input-group-lg">
+                <input id="search" aria-label="Search through library collections" name="bquery" type="text" class="form-control py=2 shadow search-bar" placeholder="Search books, articles, media and more..." />
+                <span class="input-group-append">
+                <button class="btn btn-outline-secondary border-0 search-button" aria-label="library search" value="Search" type="submit" /><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+                <!-- <label style="display:block" for="fullText">
+                  <input id="fullText" name="limiter-ft" value="Y" type="checkbox" />
+                  <span>Full Text</span>
+                </label>
+                <label style="display:block" for="peerReviewed">
+                  <input id="peerReviewed" name="limiter-rv" value="Y" type="checkbox" />
+                  <span>Peer Reviewed</span>
+                </label>
+                <label style="display:block" for="catalogOnly">
+                  <input id="catalogOnly" name="limiter-fc" value="Y" type="checkbox" />
+                  <span>Catalog Only</span>
+                </label> -->
+              </form>
+              <!-- EBSCO Search Box Ends -->
             </div>
         </div>
     </div>
