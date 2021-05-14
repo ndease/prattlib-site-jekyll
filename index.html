@@ -6,7 +6,6 @@ title: Pratt Institute Libraries
 <html lang="en">
   <head>
     {% include head.html %}
-    <title>{{ page.title }}</title>
   </head>
   <body>
     <a href="#main" class="hide">Skip to main content</a>
@@ -17,7 +16,7 @@ title: Pratt Institute Libraries
         <div class="container">
           <div class="row">
           <div class="home-page-splash">
-          <h1 style="text-align:left; text-shadow: 2px 2px 4px #000000;">RESEARCH & DISCOVER</h1>
+          <h1 id="home-page-motto">RESEARCH & DISCOVER</h1>
           <!-- EBSCO Search Box Begins -->
           <form action="https://searchbox.ebsco.com/search/">
             <input name="schemaId" value="search" type="hidden" />
@@ -26,13 +25,12 @@ title: Pratt Institute Libraries
             <input name="profid" value="eds" type="hidden" />
             <input name="authtype" value="ip,guest" type="hidden" />
             <input name="scope" value="site" type="hidden" />
-            <input name="site" value="eds-live" type="hidden" />\
-
+            <input name="site" value="eds-live" type="hidden" />
             <input name="direct" value="true" type="hidden" />
             <div class="input-group input-group-lg">
             <input id="search" aria-label="Search through library collections" name="bquery" type="text" class="form-control py=2 shadow search-bar" placeholder="Search books, articles, media and more..." />
             <span class="input-group-append">
-            <button class="btn btn-outline-secondary border-0 search-button" aria-label="library search" value="Search" type="submit" /><i class="fa fa-search"></i></button>
+            <button class="btn btn-outline-secondary border-0 search-button" aria-label="library search" value="Search" type="submit"><i class="fa fa-search"></i></button>
             </span>
           </div>
             <!-- <label style="display:block" for="fullText">
@@ -168,9 +166,14 @@ springshare_widget_config_1579290774229 = { path: 'blogs' };
           </div>
                     <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="card">
- <div class="card-body">
-<a class="twitter-timeline" data-height="500" href="https://twitter.com/PrattLibraries?ref_src=twsrc%5Etfw">Tweets by PrattLibraries</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+                          <div class="card-body">
+                            <h3>Stop AAPI Hate</h3>
+                            <hr>
+                            <img src ="https://libapps.s3.amazonaws.com/accounts/151516/images/believe_twitter.png" alt="I Still Believe in Our City">
+                          <p>Pratt Institute Libraries condemns the recent racist, hate-fueled attacks on Asian, Asian American and Asian/Pacific Islander (AAPI) communities. Anti-Asian bias is not new in this country and we cannot let this go without notice. We must open our eyes to how recent events and past history directly impacts our Pratt community.</p>
+                            <a href="https://libguides.pratt.edu/stop_aapi_hate/">Read More</a>
+
+</div>
                             </div>
                     </div>
         </div>
