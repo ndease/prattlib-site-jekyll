@@ -465,6 +465,11 @@ footer  {
     color:  white;
    }
 
+#home-page-motto {
+  text-align:left;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 @media (min-width:  1000px)  {
     .home-page-splash  {
     margin-top:  180px;
@@ -814,3 +819,23 @@ z-index:9000;
   text-decoration: underline;
   color:black;
 }
+
+/* LibChat Widget CSS */
+            .s-lch-widget-float { position: fixed; bottom: 1px; right: 1px; z-index: 1000; padding: 1em; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-line-pack: end; align-content: flex-end; -ms-flex-align: end; align-items: flex-end; box-sizing: border-box; pointer-events: none; }
+            .s-lch-widget-float.open { top: 1px; width: 375px; height: 100%; }
+            .s-lch-widget-float > * { pointer-events: auto; }
+            .s-lch-widget-float-load { -ms-flex: 0 1 auto; flex: 0 1 auto; display: none; transition: flex-grow 2s; border-radius: 5px; border: 1px solid rgb(221, 221, 221); box-shadow: 0.1em 0.2em 0.5em #ccc; min-height: 200px; width: 100%; height: 200px; }
+            .s-lch-widget-float-load.expanded { -ms-flex: 2 1 auto; flex: 2 1 auto; min-height: 0; }
+            .s-lch-widget-float.open .s-lch-widget-float-load { display: block; }
+            .s-lch-widget-float-btn { border: none; padding: .75em .75em .5em .75em; border-radius: 5px; position: relative; bottom: 0; right: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-shadow: 0.1em 0.2em 0.5em #ccc; font-size: .9em; color: #ffffff; width: 4em; height: 3.75em; }
+            .s-lch-widget-float.open .s-lch-widget-float-btn { margin-top: 1em; }
+            .s-lch-widget-float-btn.online { background-color: transparent; color: #ffffff; }
+            .s-lch-widget-float-btn svg .dots { display: none; }
+            .s-lch-widget-float-btn.online svg .dots { display: block; }
+            .s-lch-widget-float-btn.s-lch-widget-img-btn, .s-lch-widget-float-btn img { padding: 0; height: 60px; width: 160px; }
+            #s-lch-widget-float-indicator { position: absolute; top: -.5em; right: -.5em; background-color: red; border-radius: 1em; width: 1em; height: 1em; }
+            @media (max-width: 550px) {
+            .s-lch-widget-float { left: 0; width: 100%; }
+            .s-lch-widget-float.open .s-lch-widget-float-load { width: 100%; }
+            .s-lch-widget-float.open .s-lch-widget-float-btn { display: none; }
+            }
