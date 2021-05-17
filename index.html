@@ -1,57 +1,7 @@
 ---
 title: Pratt Institute Libraries
+layout: home
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <a href="#main" class="hide">Skip to main content</a>
-    <a href="#search" class="hide">Skip to library search</a>
-      <!-- Header and Navigation -->
-  <header>
-        {% include nav.html %}
-        <div class="container">
-          <div class="row">
-          <div class="home-page-splash">
-          <h1 id="home-page-motto">RESEARCH & DISCOVER</h1>
-          <!-- EBSCO Search Box Begins -->
-          <form action="https://searchbox.ebsco.com/search/">
-            <input name="schemaId" value="search" type="hidden" />
-            <input name="custid" value="s8440772" type="hidden" />
-            <input name="groupid" value="main" type="hidden" />
-            <input name="profid" value="eds" type="hidden" />
-            <input name="authtype" value="ip,guest" type="hidden" />
-            <input name="scope" value="site" type="hidden" />
-            <input name="site" value="eds-live" type="hidden" />
-            <input name="direct" value="true" type="hidden" />
-            <div class="input-group input-group-lg">
-            <input id="search" aria-label="Search through library collections" name="bquery" type="text" class="form-control py=2 shadow search-bar" placeholder="Search books, articles, media and more..." />
-            <span class="input-group-append">
-            <button class="btn btn-outline-secondary border-0 search-button" aria-label="library search" value="Search" type="submit"><i class="fa fa-search"></i></button>
-            </span>
-          </div>
-            <!-- <label style="display:block" for="fullText">
-              <input id="fullText" name="limiter-ft" value="Y" type="checkbox" />
-              <span>Full Text</span>
-            </label>
-            <label style="display:block" for="peerReviewed">
-              <input id="peerReviewed" name="limiter-rv" value="Y" type="checkbox" />
-              <span>Peer Reviewed</span>
-            </label>
-            <label style="display:block" for="catalogOnly">
-              <input id="catalogOnly" name="limiter-fc" value="Y" type="checkbox" />
-              <span>Catalog Only</span>
-            </label> -->
-          </form>
-          <!-- EBSCO Search Box Ends -->
-           <a class="advanced-search" href="https://search.ebscohost.com/login.aspx?direct=true&authtype=ip,guest&custid=s8440772&setup=1&groupid=main&profile=eds">Advanced Search</a>
-          </div>
-            </div>
-         </div>
-  </header>
     <main id="main">
  <div class="row">
         </div>
@@ -102,7 +52,33 @@ title: Pratt Institute Libraries
                 <h2>Explore</h2>
                 <hr><br>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                  {%- if site.posts.size > 0 -%}
+                      {%- for post in site.posts -%}
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                      <div class="card">
+                        {%- if post.image -%}
+                          <img src="{{- post.image | relative_url -}}" alt="" class="card-img-top">
+                        {%- else -%}
+                          {%- assign postImage = "/assets/images/image-default.jpg" -%}
+                          <img src="{{- postImage | relative_url -}}" alt="" class="card-img-top">
+                        {%- endif -%}
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        <h3 class="card-title">
+                          <a class="post-link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                          </a>
+                        </h3>
+                        {%- if site.show_excerpts -%}
+                          {{ post.excerpt }}
+                        {%- endif -%}
+                        </div>
+                        </div>
+                      {%- endfor -%}
+                    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+                  {%- endif -%}
+
+                    <!-- <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://libguides.pratt.edu/archives">
                             <div class="com">
                                 <img src="{{absolute_url}}/img/archives.jpg" class="image " alt>
@@ -131,7 +107,7 @@ title: Pratt Institute Libraries
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="container">
@@ -179,6 +155,3 @@ springshare_widget_config_1579290774229 = { path: 'blogs' };
         </div>
  </div>
     </main>
-{% include footer.html %}
-  </body>
-</html>
