@@ -823,16 +823,13 @@ z-index:9000;
   color:black;
 }
 
-.blog-roll-image{
-  max-height:200px;
-  width:100%;
-}
-
 #featured-image-attr{
-  background-color:rgba(0,0,0,.4);
+  background-color:rgba(0,0,0,.6);
   color:white;
   padding:.3em;
+  font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
 }
+
 /* LibChat Widget CSS */
             .s-lch-widget-float { position: fixed; bottom: 1px; right: 1px; z-index: 1000; padding: 1em; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-line-pack: end; align-content: flex-end; -ms-flex-align: end; align-items: flex-end; box-sizing: border-box; pointer-events: none; }
             .s-lch-widget-float.open { top: 1px; width: 375px; height: 100%; }
