@@ -5,13 +5,14 @@ description: "The mission of the Pratt Institute Libraries is to provide outstan
 keywords: Brooklyn, New York City, Pratt Institute, Art, Architecture, Design, Information, art library
 email: ndease@pratt.edu
 # for markup
-featured-image: "/img/heading1.jpg"
-featured-image-alt: "Pratt Institute Libraries in winter"
+featured-image: "/img/77A9863@0.3x.jpg"
+featured-image-alt: "Concrete Melting #3 by Kefan Bai, MFA Fine Arts 2020"
+featured-image-attr: "Concrete Melting #3 by Kefan Bai, MFA Fine Arts 2020"
 
 # Where things are
 source              : .
 destination         : ./_site
-collections_dir     : .
+# collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
 data_dir            : _data
@@ -34,7 +35,7 @@ strict_front_matter : false
 
 # Filtering Content
 show_drafts         : null
-limit_posts         : 0
+limit_posts         : 3
 future              : false
 unpublished         : false
 
@@ -53,7 +54,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-url                 : http://lib-dev.pratt.edu
+url                 :
 baseurl             :
 show_dir_listing    : false
 

@@ -311,7 +311,7 @@ header  {
     min-height:  auto;
     text-align:  center;
     color:  #fff;
-    background-image:  url(https://library.pratt.edu/img/heading1.jpg);
+    background-image:  url({{site_url}}/img/heading1.jpg);
     background-color:  black;
     background-position:  center;
     -webkit-background-size:  cover;
@@ -319,18 +319,21 @@ header  {
     background-size:  cover;
 }
 .header2  {
-    background-image:  url(https://library.pratt.edu/img/campus1.jpg);
+    background-image:  url({{site_url}}/img/campus1.jpg);
 }
 .header3  {
-    background-image:  url(https://library.pratt.edu/img/pi_bg4.jpg);
+    background-image:  url({{site_url}}/img/pi_bg4.jpg);
 }
 .header4  {
-    background-image:  url(https://library.pratt.edu/img/pi_bg2.jpg);
+    background-image:  url({{site_url}}/img/pi_bg2.jpg);
 }
 .header5  {
-    background-image:  url(https://library.pratt.edu/img/pi_bg5.jpg);
+    background-image:  url({{site_url}}/img/pi_bg5.jpg);
 }
 
+header.featured-image {
+  background-image:  url({{site_url}}{{site.featured-image}});
+}
 ul  {
     list-style:  none;
     padding-left:  0;
@@ -820,6 +823,16 @@ z-index:9000;
   color:black;
 }
 
+.blog-roll-image{
+  max-height:200px;
+  width:100%;
+}
+
+#featured-image-attr{
+  background-color:rgba(0,0,0,.4);
+  color:white;
+  padding:.3em;
+}
 /* LibChat Widget CSS */
             .s-lch-widget-float { position: fixed; bottom: 1px; right: 1px; z-index: 1000; padding: 1em; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-line-pack: end; align-content: flex-end; -ms-flex-align: end; align-items: flex-end; box-sizing: border-box; pointer-events: none; }
             .s-lch-widget-float.open { top: 1px; width: 375px; height: 100%; }
