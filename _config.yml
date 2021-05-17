@@ -35,6 +35,7 @@ strict_front_matter : false
 
 # Filtering Content
 show_drafts         : null
+show_excerpts       : true
 limit_posts         : 3
 future              : false
 unpublished         : false
