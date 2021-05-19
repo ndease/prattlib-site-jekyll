@@ -837,16 +837,25 @@ z-index:9000;
   width: 100%;
 }
 
+h3 > a.post-link{
+  text-align: left;
+}
 .post-meta{
-  background-color:#FFB900;
   color:black;
-  padding:.2em;
+  padding-top:.2em;
   font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+}
+
+.post-category{
+  color:#F26531;
+  font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  margin-top:.7em;
+  letter-spacing: .1em;
 }
 
 .post{
   padding:1em;
-
 }
 
 .blog-caption{
@@ -862,12 +871,17 @@ font-size:1em;
   font-size:1.1em;
 }
 .post > .post-meta{
-  background-color:white;
   text-align:center;
+}
+
+.lib-news img:hover{
+opacity:.6;
+transition:.2s ease;
 }
 div.lib-news > p {
     overflow: hidden;
     margin-top:0;
+    margin-bottom:0;
     text-align: left;
     text-overflow: ellipsis;
     display: -webkit-box;

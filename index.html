@@ -20,8 +20,8 @@ layout: home
                                 <a id="find-images" class="btn btn-primary expert-tool" href="https://libguides.pratt.edu/visualresources"><i class="fas fa-2x fa-images"></i>Images</a>
                                 <a id="find-video" class="btn btn-primary expert-tool" href="https://libguides.pratt.edu/filmcollection"><i class="fas fa-2x fa-tv"></i>Film & Video</a>
                                 <a id="find-equipment" class="btn btn-primary expert-tool" href="https://libguides.pratt.edu/equipment"><i class="fas fa-2x fa-camera"></i>Equipment</a>
+                                <a id="pickup" class="btn btn-primary expert-tool" href="https://libguides.pratt.edu/archives"><i class="fas fa-2x fa-archive"></i>Archives</a>
                                 <a id="find-guides" class="btn btn-primary expert-tool" href="https://libguides.pratt.edu/?b=s"><i class="fas fa-2x fa-book-open"></i>Research Guides</a>
-                                <a id="pickup" class="btn btn-primary expert-tool" href="https://libguides.pratt.edu/remote_learning/pickup"><i class="fas fa-2x fa-shopping-cart"></i>Contact-free<br>Pickup</a>
                             </div>
                         </div>
                     </div>
@@ -48,9 +48,9 @@ layout: home
             </div>
         </div>
         <!-- spotlights -->
-            <div class="container text-center">
-                <h2>Explore</h2>
-                <hr><br>
+            <div class="container text-left">
+                <h2 class="hide">News</h2>
+                <hr>
                 <div class="row">
                   {%- if site.posts.size > 0 -%}
                       {%- for post in site.posts -%}
@@ -66,22 +66,26 @@ layout: home
                           <img src="{{- postImage | relative_url -}}" alt="" class="card-img-top">
                           </a>
                         {%- endif -%}
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        <span class="post-category">{{ post.categories }}</span>
                         <h3 class="h4">
                           <a class="post-link" href="{{ post.url | relative_url }}">
                             {{ post.title | escape }}
                           </a>
                         </h3>
-                        {%- if site.show_excerpts -%}
+                        <!-- {%- if site.show_excerpts -%}
                           {{ post.excerpt }}
-                        {%- endif -%}
+                        {%- endif -%} -->
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <p class="post-meta"><span>{{ post.date | date: date_format }}</span>&nbsp;
+                        {%- if post.author -%}
+                          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
+                        {%- endif -%}</p>
                         </div>
                         </div>
                       {%- endfor -%}
                     <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
                   {%- endif -%}
-
+<div id="api_upc_cid10470_iid4676"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4676&m=upc&cid=10470&audience=&c=&d=&l=5&context=object&format=js"> </script>
                     <!-- <div class="col-lg-4 col-sm-6 mb-4">
                         <a href="https://libguides.pratt.edu/archives">
                             <div class="com">
