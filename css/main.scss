@@ -830,6 +830,58 @@ z-index:9000;
   font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
 }
 
+.center-cropped {
+  object-fit: cover;
+  // object-position: center; /* Center the image within the element */
+  height: 200px;
+  width: 100%;
+}
+
+.post-meta{
+  background-color:#FFB900;
+  color:black;
+  padding:.2em;
+  font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+}
+
+.post{
+  padding:1em;
+
+}
+
+.blog-caption{
+margin-top:.2em;
+font-size:1em;
+}
+.post-title{
+  text-align:center;
+}
+.post-content{
+  margin-left:5em;
+  margin-right:5em;
+  font-size:1.1em;
+}
+.post > .post-meta{
+  background-color:white;
+  text-align:center;
+}
+div.lib-news > p {
+    overflow: hidden;
+    margin-top:0;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.featured-image-post{
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  margin-top:0;
+}
+
 /* LibChat Widget CSS */
             .s-lch-widget-float { position: fixed; bottom: 1px; right: 1px; z-index: 1000; padding: 1em; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-line-pack: end; align-content: flex-end; -ms-flex-align: end; align-items: flex-end; box-sizing: border-box; pointer-events: none; }
             .s-lch-widget-float.open { top: 1px; width: 375px; height: 100%; }
