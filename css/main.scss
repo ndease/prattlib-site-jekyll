@@ -205,8 +205,7 @@ hr  {
     -webkit-box-sizing:  content-box;
     -moz-box-sizing:  content-box;
     box-sizing:  content-box;
-    color:  black;
-    background-color:  black;
+    background-color:  #8c8c8c;
 }
 mark  {
     background:  #ff0;
@@ -839,10 +838,15 @@ z-index:9000;
 
 h3 > a.post-link{
   text-align: left;
+  color:#212529;
+}
+h3 > a.post-link:hover{
+  color:#0C77D4;
+  text-decoration: none;
 }
 .post-meta{
-  color:black;
-  padding-top:.2em;
+  padding-top:.05em;
+  color:rgba(0,0,0,.65);
   font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
 }
 
@@ -895,6 +899,67 @@ div.lib-news > p {
   width: 100%;
   margin-top:0;
 }
+
+/*style the libcal widget for responsive display*/
+#api_upc_cid10470_iid4676{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  // padding:1em;
+  // margin:20px;
+  font-family: 'ApercuMedium', Helvetica, Arial, sans-serif;
+}
+.s-lc-ea-l{
+  display:none;
+}
+.s-lc-ea-tdes{
+  display:none;
+}
+tr.s-lc-ea-ttit a {
+    font-size: 1.5em;
+    color:#212529;
+
+}
+
+tr.s-lc-ea-ttit a:hover {
+  color:#0C77D4;
+  text-decoration: none;
+}
+.s-lc-ea-tdat{
+      font-size:1.1em;
+      color:#212529;
+}
+.s-lc-ea-ttim{
+    margin-top: .7em;
+    color: rgba(0,0,0,0.65);
+    }
+.s-lc-ea-tloc{
+  color: rgba(0,0,0,0.65);
+}
+
+.s-lc-ea-noe{
+  font-size:1.2em;
+  text-align:center;
+  padding:1em;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.08);
+}
+    .s-lc-ea-tcat{
+      color: #F26531;
+      letter-spacing: .1em;
+      text-transform: uppercase;}
+
+#api_upc_cid10470_iid4676 > .s-lc-ea-h3{
+  display: none;
+}
+
+#api_upc_cid10470_iid4676 > table {
+    border-left: 20px solid #FFB900;
+}
+#api_upc_cid10470_iid4676 > table > tbody > tr > td{
+  padding-left:1em;
+}
+/*END LibCal widget*/
 
 /* LibChat Widget CSS */
             .s-lch-widget-float { position: fixed; bottom: 1px; right: 1px; z-index: 1000; padding: 1em; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-line-pack: end; align-content: flex-end; -ms-flex-align: end; align-items: flex-end; box-sizing: border-box; pointer-events: none; }
