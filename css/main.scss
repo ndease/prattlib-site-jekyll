@@ -333,6 +333,7 @@ header  {
 header.featured-image {
   background-image:  url({{site_url}}{{site.featured-image}});
 }
+
 ul  {
     list-style:  none;
     padding-left:  0;
@@ -676,17 +677,6 @@ img  {
     padding:  5px 15px 5px 15px;
 }
 
-.account:hover  {
-    border-color:  #FFB900;
-}
-
-.account  {
-    color:  white;
-    border-color:  white;
-    border-style:  solid;
-    border-width:  1px;
-    border-radius:  50px;
-}
 .dropdown-item  {
     color:  black;
 }
