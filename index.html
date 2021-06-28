@@ -49,7 +49,7 @@ layout: home
         </div>
         <!-- spotlights -->
             <div class="container text-left">
-                <h2 class="hide">News</h2>
+                <h2 class="text-center">News Feed</h2>
                 <hr>
                 <div class="row">
                   {%- if site.posts.size > 0 -%}
@@ -85,45 +85,19 @@ layout: home
                       {%- endfor -%}
                     <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
                   {%- endif -%}
-<div id="api_upc_cid10470_iid4676"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4676&m=upc&cid=10470&audience=&c=&d=&l=5&context=object&format=js"> </script>
-                    <!-- <div class="col-lg-4 col-sm-6 mb-4">
-                        <a href="https://libguides.pratt.edu/archives">
-                            <div class="com">
-                                <img src="{{absolute_url}}/img/archives.jpg" class="image " alt>
-                                <h3 class="centered-img-text">Archives</h3>
-                                <div id="overlay-archives">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <a href="https://pratt.libcal.com">
-                            <div class="com">
-                                <img src="{{absolute_url}}/img/exhibits.jpg" class="image " alt>
-                                <h3 class="centered-img-text text-center">Events & Exhibits</h3>
-                                <div id="overlay-exhibits">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <a href="https://connectny.info/" target="_blank">
-                            <div class="com">
-                                <img src="{{absolute_url}}/img/collects.jpg" class="image " alt>
-                                <h3 class="centered-img-text">ConnectNY</h3>
-                                <div id="overlay-special">
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
                 </div>
+            </div>
+            <div class="container">
+              <h2 class="text-center">Upcoming Events</h2>
+              <hr>
+            <div id="api_upc_cid10470_iid4676"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4676&m=upc&cid=10470&audience=&c=&d=&l=5&context=object&format=js"> </script>
             </div>
             <div class="container">
                 <div class="row">
                   <div class="col-lg-6 col-sm-12 mb-4">
                     <div class="card">
 <div class="card-body">
-<h3 class="card-title">Blog</h3><hr>
+<h2 class="card-title">Blog</h2><hr>
 <script>
 var springStats = springStats || {};
 springStats.saConfig = springStats.saConfig || {
@@ -150,7 +124,7 @@ springshare_widget_config_1579290774229 = { path: 'blogs' };
           </div>
                     <div class="col-lg-6 col-sm-12 mb-4">
                       <div class="card-body">
-                      <h3 class="card-title">Featured</h3><hr>
+                      <h2 class="card-title">Featured</h2><hr>
                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -159,21 +133,28 @@ springshare_widget_config_1579290774229 = { path: 'blogs' };
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
+                            <a href="https://talks.pratt.edu/category/Libraries%3ELibrary+Tutorials/122554662" target="_blank">
                             <img class="d-block w-100" src="img/collects.jpg" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                           <h4>Collections</h4>
-                           <p>...</p>
+                            <div class="carousel-caption d-md-block">
+                           <h3 class="p-5">Video Tutorials</h3>
                          </div>
+                          </a>
                           </div>
                           <div class="carousel-item">
+                            <a href="https://libguides.pratt.edu/specialcollections">
                             <img class="d-block w-100" src="img/archives.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
-                           <h4>Archives</h4>
-                           <p>...</p>
+                            <div class="carousel-caption d-md-block">
+                           <h3 class="p-5">Special Collections</h3>
                          </div>
+                         </a>
                           </div>
                           <div class="carousel-item">
+                            <a href="https://libguides.pratt.edu/c.php?g=763506&p=5474521">
                             <img class="d-block w-100" src="img/exhibits.jpg" alt="Third slide">
+                            <div class="carousel-caption d-md-block">
+                           <h3 class="p-5">Past Exhibitions</h3>
+                         </div>
+                         </a>
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
