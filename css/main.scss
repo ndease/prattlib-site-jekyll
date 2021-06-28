@@ -802,12 +802,13 @@ z-index:9000;
   position:relative;
   width:100%;
   top:60px;
+  text-align: center;
   background-color: #FFB900;
   color:black;
   font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
 }
 
-.lib-site-alert >{
+.lib-site-alert > a{
   text-decoration: underline;
   color:black;
 }
