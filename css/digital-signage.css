@@ -18,16 +18,21 @@ body
   width: 100%;
 }
 
+.bottom-logo{
+  padding-top:2.5vh;
+  height:10vh;
+}
 .logo-signage{
     width:15vw;
     margin-left:auto;
     margin-right:auto;
     display:block;
   }
-  
+
 .carousel-inner{
-  margin:5vh;
   margin-top:10vh;
+  margin-left:auto;
+  margin-right:auto;
   height: 80vh;
   max-width:95vw;
   overflow: hidden;
