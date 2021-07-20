@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="refresh" content="3600">
+    <title>{{ page.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Open Graph Metadata -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.title | escape }}" />
+    <meta property="og:description" content="{{ site.description | escape }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ site.featured-image | absolute_url }}" />
+    <meta property="og:image:alt" content="{{ site.featured-image-alt | escape }}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:locale" content="en_US" />
+<!-- BootStrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<!--Library CSS -->
+    {% assign cacheBust = site.time | date:'?v=%s' %}
+    <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url | append: cacheBust }}">
+<!--Digital Signage CSS -->
+    {% assign cacheBust = site.time | date:'?v=%s' %}
+    <link rel="stylesheet" href="{{ '/css/digital-signage.css' | absolute_url | append: cacheBust }}">
+  </head>
+<body>
+
+{{ content }}
+  <img class="logo-signage" src="{{absolute_url}}/img/PIL_Logo_White.svg" alt="Pratt Institute Libraries - Home">
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<!-- Bootstrap Fallback -->
+<div id="bootstrapCssTest" class="collapse"></div>
+<script src="{{ '/js/bootstrap-css-fallback.js' | absolute_url | append: cacheBust }}"></script>
+ <script src="{{ '/js/random-bg.js' | absolute_url | append: cacheBust }}"></script>
+</body>
+</html>
