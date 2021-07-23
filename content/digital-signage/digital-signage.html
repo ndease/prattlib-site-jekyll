@@ -5,17 +5,18 @@ layout: digital-signage
 ---
 
 <main id="main">
+  <div class="top-signage">
+    </div>
       <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="2000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-            <div class="col-lg-6">
-            <h1>Library Hours</h1>
-            <p>See our full hours below:</p>
-            <img src="{{site_url}}/img/hours-qrcode.png" alt="">
+            <div class="col-lg-5">
+            <h2 class="h1">Library Hours</h2>
+            <img class="qr-code" src="{{site_url}}/img/hours-qrcode.png" alt="">
             </div>
-            <div class="col-lg-6">
-              <h1> Today's Hours</h1>
+            <div class="col-lg-7">
+              <h3 class="h2"> Today</h3>
               <div id="api_hours_today_iid4676_lid0"></div>
               <script src="https://api3.libcal.com/api_hours_today.php?iid=4676&lid=0&format=js&systemTime=0&context=object">
               </script>
@@ -23,44 +24,45 @@ layout: digital-signage
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
+            <h2 class="h1">Upcoming Events</h2>
+    <div id="api_upc_cid10470_iid4676"><h3 class="s-lc-ea-h3">Upcoming Events</h3><table class="s-lc-ea-tb "><tbody><tr class="s-lc-ea-ttit"><td class="s-lc-ea-l">Title:</td><td><a href="https://pratt.libcal.com/event/8073787?hs=a">test event</a></td></tr><tr class="s-lc-ea-tdat"><td class="s-lc-ea-l">Date:</td><td>Friday, July 23, 2021</td></tr><tr class="s-lc-ea-ttim"><td class="s-lc-ea-l">Time:</td><td>9:00am - 1:00pm</td></tr><tr class="s-lc-ea-tloc"><td class="s-lc-ea-l">Location:</td><td>3rd Floor, Brooklyn Campus Library</td></tr><tr class="s-lc-ea-tdes"><td class="s-lc-ea-l">Description:</td><td><p>an event</p></td></tr></tbody></table></div>
 
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
+            <!-- <div id="api_upc_cid10470_iid4676"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4676&m=upc&cid=10470&audience=&c=&d=&l=5&context=object&format=js"> </script> -->
+
           </div>
           {%- if site.posts.size > 0 -%}
               {%- for post in site.posts -%}
-          <div class="carousel-item">
+          <div class="carousel-item news-slide">
             <div class="row">
             <div class="col-lg-6">
+            <h2 class="h1">Library News</h2>
                 {%- if post.image -%}
                 <a href="{{ post.url | escape }}">
                   <img src="{{- post.image | relative_url -}}" alt="{{post.image-caption}}" class="img-signage">
                   </a>
-                  <h1>Library News</h1>
+                  {%- else -%}
+                    {%- assign postImage = "/assets/images/image-default.jpg" -%}
+                    <a href="{{ post.url | escape }}">
+                    <img src="{{- postImage | relative_url -}}" alt="" class="card-img-top">
+                    </a>
+                  {%- endif -%}
+                  <h3 class="h3">
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                      {{ post.title | escape }}
+                    </a>
+                  </h3>
+                  <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                  <p class="post-meta"><span>{{ post.date | date: date_format }}</span>&nbsp;
+                  {%- if post.author -%}
+                    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
+                  {%- endif -%}</p> -->
                   </div>
-                  <div class="col-lg-6">
-                {%- else -%}
-                  {%- assign postImage = "/assets/images/image-default.jpg" -%}
-                  <a href="{{ post.url | escape }}">
-                  <img src="{{- postImage | relative_url -}}" alt="" class="card-img-top">
-                  </a>
-                {%- endif -%}
+                  <div class="col-lg-6 post-excerpt">
                 <span class="post-category">{{ post.categories }}</span>
-                <h3 class="h4">
-                  <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                  </a>
-                </h3>
                 {%- if site.show_excerpts -%}
                   {{ post.excerpt }}
                 {%- endif -%}
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <p class="post-meta"><span>{{ post.date | date: date_format }}</span>&nbsp;
-                {%- if post.author -%}
-                  • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
-                {%- endif -%}</p>
+
                 </div>
                 </div>
                 </div>
@@ -68,7 +70,9 @@ layout: digital-signage
             <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
           {%- endif -%}
         </div>
-        <div class="bottom-logo">
-            <img class="logo-signage" src="{{absolute_url}}/img/PIL_Logo_White.svg" alt="Pratt Institute Libraries - Home">
+        <div class="bottom-signage" id="scroll-container">
+          <div id="scroll-text">
+          {% include alert.html%}
+          </div>
           </div>
 </main>
