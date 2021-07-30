@@ -7,35 +7,63 @@ layout: digital-signage
 <main id="main">
   <div class="top-signage">
     </div>
-      <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="2000">
+      <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="10000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row">
-            <div class="col-lg-5">
             <h2 class="h1">Library Hours</h2>
-            <img class="qr-code" src="{{site_url}}/img/hours-qrcode.png" alt="">
-            </div>
-            <div class="col-lg-7">
-              <h3 class="h2"> Today</h3>
-              <div id="api_hours_today_iid4676_lid0"></div>
-              <script src="https://api3.libcal.com/api_hours_today.php?iid=4676&lid=0&format=js&systemTime=0&context=object">
-              </script>
-            </div>
+            <div class="row">
+              <div class="col-lg-5 text-center">
+                <i class="far fa-8x fa-clock"></i>
+                <img class="qr-code" src="{{site_url}}/img/hours-qrcode.png" alt="">
+              </div>
+              <div class="col-lg-7">
+                <h3 class="h2" id="today">Today</h3>
+                <div id="api_hours_today_iid4676_lid0"></div>
+                <script src="https://api3.libcal.com/api_hours_today.php?iid=4676&lid=0&format=js&systemTime=0&context=object">
+                </script>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <h2 class="h1">Upcoming Events</h2>
-    <div id="api_upc_cid10470_iid4676"><h3 class="s-lc-ea-h3">Upcoming Events</h3><table class="s-lc-ea-tb "><tbody><tr class="s-lc-ea-ttit"><td class="s-lc-ea-l">Title:</td><td><a href="https://pratt.libcal.com/event/8073787?hs=a">test event</a></td></tr><tr class="s-lc-ea-tdat"><td class="s-lc-ea-l">Date:</td><td>Friday, July 23, 2021</td></tr><tr class="s-lc-ea-ttim"><td class="s-lc-ea-l">Time:</td><td>9:00am - 1:00pm</td></tr><tr class="s-lc-ea-tloc"><td class="s-lc-ea-l">Location:</td><td>3rd Floor, Brooklyn Campus Library</td></tr><tr class="s-lc-ea-tdes"><td class="s-lc-ea-l">Description:</td><td><p>an event</p></td></tr></tbody></table></div>
+    <div id="api_upc_cid10470_iid4676"><h3 class="s-lc-ea-h3">Upcoming Events</h3><table class="s-lc-ea-tb ">
+      <tbody><tr class="s-lc-ea-ttit"><td class="s-lc-ea-l">Title:</td>
+        <td><a href="https://pratt.libcal.com/event/8073787?hs=a">test event</a></td>
+      </tr><tr class="s-lc-ea-tdat"><td class="s-lc-ea-l">Date:</td><td>Friday, July 23, 2021</td>
+      </tr><tr class="s-lc-ea-ttim"><td class="s-lc-ea-l">Time:</td><td>9:00am - 1:00pm</td></tr>
+      <tr class="s-lc-ea-tloc"><td class="s-lc-ea-l">Location:</td><td>3rd Floor, Brooklyn Campus Library</td></tr>
+      <tr class="s-lc-ea-tdes"><td class="s-lc-ea-l">Description:</td><td><p>an event</p></td></tr></tbody></table>
+
+      <table class="s-lc-ea-tb ">
+        <tbody><tr class="s-lc-ea-ttit"><td class="s-lc-ea-l">Title:</td>
+          <td><a href="https://pratt.libcal.com/event/8073787?hs=a">test event</a></td>
+        </tr><tr class="s-lc-ea-tdat"><td class="s-lc-ea-l">Date:</td><td>Friday, July 23, 2021</td>
+        </tr><tr class="s-lc-ea-ttim"><td class="s-lc-ea-l">Time:</td><td>9:00am - 1:00pm</td></tr>
+        <tr class="s-lc-ea-tloc"><td class="s-lc-ea-l">Location:</td><td>3rd Floor, Brooklyn Campus Library</td></tr>
+        <tr class="s-lc-ea-tdes"><td class="s-lc-ea-l">Description:</td><td><p>an event</p></td></tr></tbody></table>
+
+        <table class="s-lc-ea-tb ">
+          <tbody><tr class="s-lc-ea-ttit"><td class="s-lc-ea-l">Title:</td>
+            <td><a href="https://pratt.libcal.com/event/8073787?hs=a">test event</a></td>
+          </tr><tr class="s-lc-ea-tdat"><td class="s-lc-ea-l">Date:</td><td>Friday, July 23, 2021</td>
+          </tr><tr class="s-lc-ea-ttim"><td class="s-lc-ea-l">Time:</td><td>9:00am - 1:00pm</td></tr>
+          <tr class="s-lc-ea-tloc"><td class="s-lc-ea-l">Location:</td><td>3rd Floor, Brooklyn Campus Library</td></tr>
+          <tr class="s-lc-ea-tdes"><td class="s-lc-ea-l">Description:</td><td><p>an event</p></td></tr></tbody></table></div>
 
             <!-- <div id="api_upc_cid10470_iid4676"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4676&m=upc&cid=10470&audience=&c=&d=&l=5&context=object&format=js"> </script> -->
 
           </div>
+          <!-- <div class="carousel-item">
+            <div id="api_today_cid10470_12017_iid4676"></div>
+            <script src="https://api3.libcal.com/api_events.php?iid=4676&m=today&cid=10470_12017&audience=&c=&d=&simple=ul_date&context=object&format=js">
+            </script>
+            </div> -->
           {%- if site.posts.size > 0 -%}
               {%- for post in site.posts -%}
           <div class="carousel-item news-slide">
+          <h2 class="h1">Library News</h2>
             <div class="row">
             <div class="col-lg-6">
-            <h2 class="h1">Library News</h2>
                 {%- if post.image -%}
                 <a href="{{ post.url | escape }}">
                   <img src="{{- post.image | relative_url -}}" alt="{{post.image-caption}}" class="img-signage">
@@ -62,13 +90,29 @@ layout: digital-signage
                 {%- if site.show_excerpts -%}
                   {{ post.excerpt }}
                 {%- endif -%}
-
                 </div>
                 </div>
                 </div>
               {%- endfor -%}
             <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
           {%- endif -%}
+          <div class="carousel-item">
+            <h2 class="h1">Connect with us!</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                <img class="img-signage" src="{{site_url}}{{site.featured-image}}" alt="{{site.featured-alt}}">
+                </div>
+                <div class="col-lg-6 socials">
+                  <ul>
+                    <li class="h3"><a target="_blank" aria-label="Instagram" href="https://www.instagram.com/prattlibraries/?hl=en"><i class="fab  fa-instagram"></i>&nbsp;&nbsp;@prattlibraries</a></li>
+                    <li class="h3"><a target="_blank" aria-label="Facebook" href="https://www.facebook.com/pages/Pratt-Institute-Libraries/7307432007"><i class="fab  fa-facebook-square"></i>&nbsp;&nbsp;Pratt Institute Libraries</a></li>
+                    <li class="h3"><a target="_blank" aria-label="Twitter" href="https://twitter.com/PrattLibraries"><i class="fab  fa-twitter-square"></i>&nbsp;&nbsp;@PrattLibraries</a></li>
+                    <li class="h3"><a target="_blank" aria-label="blog" href="https://libguides.pratt.edu/blog"><i class="fas  fa-blog"></i>&nbsp;&nbsp;libguides.pratt.edu/blog</a></li>
+                    <li class="h3"><a target="_blank" aria-label="email" href="mailto:libref@pratt.edu"><i class="far  fa-question-circle"></i>&nbsp;&nbsp;libref@pratt.edu</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="bottom-signage" id="scroll-container">
           <div id="scroll-text">
