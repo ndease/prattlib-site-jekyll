@@ -39,6 +39,11 @@ h2.h1{
   font-size:3.5vw;
 }
 
+h3.s-lc-ea-h3{
+  font-size:3.5vw;
+  text-transform: uppercase;
+}
+
 h3.h3 a {
   font-size:2vw;
   color:white;
@@ -53,8 +58,6 @@ p.post-meta{
 font-weight: bold;
 font-family: 'apercuMedium',arial,sans-serif;
 }
-
-
 
 th.hours-col-loc{
 color: white;
@@ -84,8 +87,12 @@ a{
     background:rgba(0,0,0,.6);
     border-radius:1.5em;
 }
-.post-excerpt{
+.post-excerpt p{
   font-size:3vh;
+  display: -webkit-box;
+-webkit-line-clamp: 8;
+-webkit-box-orient: vertical;
+overflow: hidden;
 }
 
 .top-signage{
@@ -134,6 +141,20 @@ a{
 .lib-site-alert a{
   color:white;
 }
+
+.fa-clock{
+  display:block;
+  margin:.2em;
+}
+.socials a{
+  font-size: 2rem;
+  font-family: 'apercuMedium',arial,sans-serif;
+}
+
+hr{
+  background-color:white;
+  text-shadow: none;
+}
   div
   {
     font: normal 1.5vw sans-serif;
@@ -141,6 +162,14 @@ a{
     /* text-shadow: 2px 2px 4px #000; */
   }
 
+  #today{
+    text-align: center;
+    font-size:5vh;
+font-family: 'ApercuMedium', Helvetica, Arial, sans-serif;
+text-transform: uppercase;
+margin-bottom: 1em;
+letter-spacing: .1em;
+  }
 /*media queries*/
   @media (orientation:landscape){
   #api_hours_today_iid4676_lid0 table{
@@ -149,6 +178,17 @@ a{
   }
 
   @media (orientation:portrait){
+    #api_hours_today_iid4676_lid0{
+      font-size:5vw;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .fa-clock{
+      display:block;
+      font-size:15vh;
+      margin:.2em;
+    }
 
     .lib-site-alert{
       font-size:1.5vh;
@@ -171,8 +211,12 @@ a{
       font-size:4vw;
     }
 
-    .post-excerpt{
-      font-size:2vw;
+    .post-excerpt p{
+      font-size:3.5vw;
+      display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     }
   }
 
@@ -181,6 +225,22 @@ a{
 }
 
 #api_upc_cid10470_iid4676 table{
+  color:white;
+}
+
+.s-lc-ea-ttit{
+  color:white;
+}
+.s-lc-ea-tdat{
+  color:white;
+}
+.s-lc-ea-ttim{
+  color:white;
+}
+.s-lc-ea-tloc{
+  color:white;
+}
+.s-lc-ea-tdes{
   color:white;
 }
 /* scrolling text */
