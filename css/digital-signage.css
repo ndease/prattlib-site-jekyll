@@ -87,6 +87,14 @@ a{
     background:rgba(0,0,0,.6);
     border-radius:1.5em;
 }
+
+.sign-column{
+  width: 50%;
+  float: left;
+  padding: 1em;
+  display: inline-block;
+}
+
 .post-excerpt p{
   font-size:3vh;
   display: -webkit-box;

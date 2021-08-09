@@ -7,11 +7,11 @@ layout: digital-signage
 <main id="main">
   <div class="top-signage">
     </div>
-      <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="10000">
+      <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="500">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2 class="h1">Library Hours</h2>
-            <div class="row">
+            <div class="">
               <div class="col-lg-5 text-center">
                 <i class="far fa-8x fa-clock"></i>
                 <img class="qr-code" src="{{site_url}}/img/hours-qrcode.png" alt="">
@@ -62,8 +62,8 @@ layout: digital-signage
               {%- for post in site.posts -%}
           <div class="carousel-item news-slide">
           <h2 class="h1">Library News</h2>
-            <div class="row">
-            <div class="col-lg-6">
+            <div class="">
+            <div class="sign-column">
                 {%- if post.image -%}
                 <a href="{{ post.url | escape }}">
                   <img src="{{- post.image | relative_url -}}" alt="{{post.image-caption}}" class="img-signage">
@@ -85,7 +85,7 @@ layout: digital-signage
                     • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
                   {%- endif -%}</p> -->
                   </div>
-                  <div class="col-lg-6 post-excerpt">
+                  <div class="sign-column post-excerpt">
                 <span class="post-category">{{ post.categories }}</span>
                 {%- if site.show_excerpts -%}
                   {{ post.excerpt }}
@@ -98,11 +98,11 @@ layout: digital-signage
           {%- endif -%}
           <div class="carousel-item">
             <h2 class="h1">Connect with us!</h2>
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="">
+                <div class="sign-column">
                 <img class="img-signage" src="{{site_url}}{{site.featured-image}}" alt="{{site.featured-alt}}">
                 </div>
-                <div class="col-lg-6 socials">
+                <div class="sign-column socials">
                   <ul>
                     <li class="h3"><a target="_blank" aria-label="Instagram" href="https://www.instagram.com/prattlibraries/?hl=en"><i class="fab  fa-instagram"></i>&nbsp;&nbsp;@prattlibraries</a></li>
                     <li class="h3"><a target="_blank" aria-label="Facebook" href="https://www.facebook.com/pages/Pratt-Institute-Libraries/7307432007"><i class="fab  fa-facebook-square"></i>&nbsp;&nbsp;Pratt Institute Libraries</a></li>
