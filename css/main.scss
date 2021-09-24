@@ -824,16 +824,21 @@ z-index:9000;
   object-fit: cover;
   // object-position: center; /* Center the image within the element */
   height: 200px;
+  overflow:hidden;
   width: 100%;
 }
 
-h3 > a.post-link{
+div.card > a.post-link{
   text-align: left;
   color:#212529;
 }
-h3 > a.post-link:hover{
+div.card a.post-link:hover{
   color:#0C77D4;
   text-decoration: none;
+}
+
+.post-link > img{
+  margin-bottom:.5em;
 }
 .post-meta{
   padding-top:.05em;
@@ -887,6 +892,10 @@ div.lib-news > p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+div.carousel-caption > h3.p-5{
+  text-shadow: 1px 1px black;
 }
 
 .featured-image-post{
