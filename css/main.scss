@@ -8,6 +8,7 @@
 html,  body  {
     margin:  0;
     padding:  0;
+    font-family: 'ApercuRegular', arial, sans-serif;
 }
 
 /* || Pratt typography */
@@ -919,6 +920,9 @@ div.carousel-caption > h3.p-5{
 }
 .s-lc-ea-tdes{
   display:none;
+}
+i.fas.fa-2x.fa-arrow-circle-right {
+    vertical-align: middle;
 }
 tr.s-lc-ea-ttit a {
     font-size: 1.5em;
