@@ -79,7 +79,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    /* left: -25px; */
+    left:-1rem;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +98,8 @@
 
 .slick-next
 {
-    right: -25px;
+    /* right: -25px; */
+    right:-1rem;
 }
 [dir='rtl'] .slick-next
 {
@@ -207,4 +209,13 @@
 .slick-initialized .slick-slide {
     margin-left: 1em;
     margin-right: 1em;
+}
+
+.digital-collections-slider a{
+  color: #000;
+}
+
+.digital-collections-slider a:hover{
+  color: #0C77D4;
+  text-decoration: none;
 }
