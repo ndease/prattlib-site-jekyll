@@ -799,21 +799,35 @@ z-index:9000;
 }
 
 .lib-site-alert{
-  padding: 1em;
+  // padding: 1em;
   position:relative;
   width:100%;
   top:60px;
   text-align: center;
   background-color: #FFB900;
   color:black;
-  font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+  display:none;
 }
 
-.lib-site-alert > a{
+.lib-site-alert p{
+    font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+
+}
+
+.lib-site-alert i {
+  padding-top:1em;
+}
+
+.lib-site-alert p > a{
   text-decoration: underline;
   color:black;
+  border:none;
+  box-shadow:none;
 }
-
+.lib-site-alert p > a:hover {
+color: black;
+background-color: transparent;
+}
 #featured-image-attr{
   background-color:rgba(0,0,0,.6);
   color:white;
