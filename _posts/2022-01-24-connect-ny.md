@@ -2,9 +2,9 @@
 layout: post
 title:  "Requesting Books with ConnectNY"
 date:   2022-01-24 07:41:25 -0700
-image: img/blog/2019-04-29_campus_lozier-485.jpg
+image: img/blog/cny-relaunch.jpg
 categories: News
-image-caption: Cannoneer Court in front of the Brooklyn Library
+image-caption: ConnectNY brand on a blue background of books
 ---
 
 [ConnectNY](https://cny.reshare.indexdata.com/) borrowing has resumed and you can now request books outside of our local collections seamlessly with your Pratt OneKey. Need a walkthrough on the new request process? Check out the video below:
