@@ -7,7 +7,7 @@ categories: News
 image-caption: Brooklyn Library Ceiling with Coffers
 ---
 
-Welcome back! The Pratt Institute Libraries are happy to announce updates to library services for Spring 2022. The libraries will be open on a reduced schedule as well as provide online research help, PDF scanning, and purchase suggestions.
+Welcome back! The Pratt Institute Libraries are happy to announce updates to library services for Spring 2022. The libraries will be open on a reduced schedule as well as provide online research help, and PDF scanning.
 
 
 ## Visiting the Libraries
