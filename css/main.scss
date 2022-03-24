@@ -8,88 +8,98 @@
 html,  body  {
     margin:  0;
     padding:  0;
-    font-family: 'ApercuRegular', arial, sans-serif;
+    font-family: 'GraphikRegular', arial, sans-serif;
 }
 
 /* || Pratt typography */
 
 @font-face {
-font-family: 'ApercuBold';
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot/fonts/apercu-bold-webfont.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.svg#ApercuBold") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.ttf") format("truetype");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  'ApercuBoldItalic';
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.svg#ApercuBoldItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.ttf") format("truetype");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  'ApercuItalic';
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.svg#ApercuItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.ttf") format("truetype");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  'ApercuRegular';
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.svg#ApercuRegular") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.ttf") format("truetype");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  'ApercuMedium';
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.svg#ApercuMedium") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.ttf") format("truetype");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  'ApercuMediumItalic';
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.svg#ApercuMediumItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.ttf") format("truetype");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  'Entypo';
-    src:  url("https://www.pratt.edu/assets/fonts/entypo.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/entypo.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/entypo.svg#Entypo") format("svg"),  url("https://www.pratt.edu/assets/fonts/entypo.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/entypo.ttf") format("truetype");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  "LyonRegular";
-    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff2") format("woff2");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  "LyonItalic";
-    src:  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff2") format("woff2");
-    font-weight:  normal;
-    font-style:  normal;
-}
-@font-face  {
-    font-family:  "LyonBold";
-    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot");
-    src:  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff2") format("woff2");
-    font-weight:  normal;
-    font-style:  normal;
+    font-family: "GraphikMedium";
+    src: url(/fonts/Graphik-Medium-Web.woff2) format("woff2");
 }
 
+@font-face {
+    font-family: "GraphikRegular";
+    src: url(/fonts/Graphik-Regular-Web.woff2) format("woff2");
+}
+//
+// @font-face {
+// font-family: 'ApercuBold';
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot/fonts/apercu-bold-webfont.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.svg#ApercuBold") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.ttf") format("truetype");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  'ApercuBoldItalic';
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.svg#ApercuBoldItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.ttf") format("truetype");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  'ApercuItalic';
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.svg#ApercuItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.ttf") format("truetype");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  'ApercuRegular';
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.svg#ApercuRegular") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.ttf") format("truetype");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  'GraphikMedium';
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.svg#GraphikMedium") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.ttf") format("truetype");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  'GraphikMediumItalic';
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.svg#GraphikMediumItalic") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.ttf") format("truetype");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  'Entypo';
+//     src:  url("https://www.pratt.edu/assets/fonts/entypo.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/entypo.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/entypo.svg#Entypo") format("svg"),  url("https://www.pratt.edu/assets/fonts/entypo.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/entypo.ttf") format("truetype");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  "GraphikRegular";
+//     src:  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff2") format("woff2");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  "LyonItalic";
+//     src:  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff2") format("woff2");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+// @font-face  {
+//     font-family:  "LyonBold";
+//     src:  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot");
+//     src:  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff2") format("woff2");
+//     font-weight:  normal;
+//     font-style:  normal;
+// }
+
 h1,  h2,  h3,  h4,  h5,  h6  {
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
-    font-weight:  normal;
+    font-family: 'GraphikMedium', Helvetica, Arial, sans-serif;
+    font-weight:  500;
 }
 p,  pre  {
-    font-family:  "LyonRegular",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
     margin:  1.125em 0;
     line-height:  1.55em;
     font-size:  1.04em;
@@ -197,7 +207,7 @@ abbr[title]  {
     border-bottom:  1px dotted;
 }
 b,  strong  {
-    font-family:  "LyonBold",  "LyonRegular",  Helvetica,  Arial,  sans-serif;
+    font-family:  "LyonBold",  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
 }
 dfn  {
     font-style:  italic;
@@ -279,8 +289,8 @@ a  {
     margin-top:  -10px;
 }
 @media only screen and (max-width:380px)  {
-    .logo-style  {
-    height:  2rem;
+    a.navbar-brand  {
+    font-size:  1.1rem;
 }
 }
 @media only screen and (max-width:320px)  {
@@ -303,7 +313,7 @@ ul.navbar-nav{
     text-decoration:  none;
     font-size:  .95em;
     white-space: nowrap;
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
 header  {
     position:  relative;
@@ -312,26 +322,27 @@ header  {
     text-align:  center;
     color:  #fff;
     // background-image:  url({{site_url}}/img/heading1.jpg);
-    background-color:  #5BBF53;
+    background: linear-gradient(to bottom right, blue, pink);
+    // background-color:  #5BBF53;
     background-position:  center;
     -webkit-background-size:  cover;
     -moz-background-size:  cover;
     background-size:  cover;
 }
-.header2  {
-    background-image:  url({{site_url}}/img/campus1.jpg);
-}
-.header3  {
-    background-image:  url({{site_url}}/img/pi_bg4.jpg);
-}
-.header4  {
-    background-image:  url({{site_url}}/img/pi_bg2.jpg);
-}
-.header5  {
-    background-image:  url({{site_url}}/img/pi_bg5.jpg);
-}
-
-// header.featured-image {
+// .header2  {
+//     background-image:  url({{site_url}}/img/campus1.jpg);
+// }
+// .header3  {
+//     background-image:  url({{site_url}}/img/pi_bg4.jpg);
+// }
+// .header4  {
+//     background-image:  url({{site_url}}/img/pi_bg2.jpg);
+// }
+// .header5  {
+//     background-image:  url({{site_url}}/img/pi_bg5.jpg);
+// }
+//
+// // header.featured-image {
 //   background-image:  url({{site_url}}{{site.featured-image}});
 // }
 
@@ -357,14 +368,25 @@ footer  {
 .navbar-custom  {
 
 }
-
+.navbar-brand{
+  font-family: "GraphikMedium", Helvetica, Arial, sans-serif;
+  font-size:1.5em;
+  color:black;
+}
+.account{
+  border:1px solid white;
+  border-radius:30px;
+}
+.account:hover{
+  background-color:white;
+}
 .navbar-custom .navbar-nav .nav-link  {
     color:  white;
     font-size:  1.1rem;
     letter-spacing:  .08em;
 }
 .navbar-custom .nav-item.active .nav-link,  .navbar-custom .nav-item:hover .nav-link  {
-    color:  rgb(255,  185,  0);
+    color:  black;
 }
 
 .input-group > .form-control.search-bar  {
@@ -433,37 +455,34 @@ input:-internal-autofill-selected {
 }
 .jumbotron  {
     border-width:  1px;
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
     border-color:  black;
 }
 .btn-primary  {
     margin:  2px;
     border-width:  1px;
     border-color:  black;
-    border-radius:0;
+    border-radius:20px;
     background-color:  white;
     color:  black;
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
 .btn-primary:hover  {
     margin:  2px;
     border-width:  1px;
     border-color:  black;
-    border-radius:  0px;
     background-color:  #0C77D4;
     color:  white;
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
 
 .footer-links  {
     text-transform:  none;
     font-size:  1.05em;
     line-height:  1.5em;
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
 .search-box  {
-    margin-top:  100px;
-    margin-bottom:  50px;
     padding:  10px;
     width:  90%;
     margin-left:  5%;
@@ -472,8 +491,6 @@ input:-internal-autofill-selected {
 }
 @media (min-width: 1000px)  {
     .search-box  {
-    margin-top:  130px;
-    margin-bottom:  80px;
     padding:  10px;
     width:  60%;
     margin-left:  20%;
@@ -503,7 +520,7 @@ input:-internal-autofill-selected {
 }
 .blog  {
     line-height:  1;
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
 
 [data-toggle="collapse"] i:before  {
@@ -715,7 +732,7 @@ img  {
 
 .alert  {
     border-width:  2px;
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
     font-size:  1rem;
     margin:  10px;
 }
@@ -745,6 +762,7 @@ img  {
 .expert-tool {
   width: 150px;
   height: 150px;
+  border:0;
   display: inline-flex;
   justify-content: center;
   flex-direction: column;
@@ -769,11 +787,11 @@ padding-bottom:.4em;
 div#s-lg-widget-1579290774229 > ul > li > a {
   font-size:  1.05em;
   line-height:  1.5em;
-  font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+  font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
 
 .pratt-btn{
-  font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+  font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 	background-color:#FFB900;
 	margin:1rem;
 	padding: 1.25rem;
@@ -804,7 +822,6 @@ z-index:9000;
 }
 
 .advanced-search{
-  text-shadow: 2px 2px 4px #000000;
    color:white;
    float:right;
    margin-top:5px;
@@ -827,7 +844,7 @@ z-index:9000;
 }
 
 .lib-site-alert p{
-    font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+    font-family:'GraphikMedium', Helvetica, Arial, sans-serif;
 
 }
 
@@ -848,7 +865,7 @@ background-color: transparent;
 #featured-image-attr{
   color:white;
   padding:.3em;
-  font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+  font-family:'GraphikMedium', Helvetica, Arial, sans-serif;
 }
 
 .center-cropped {
@@ -874,12 +891,12 @@ div.card a.post-link:hover{
 .post-meta{
   padding-top:.05em;
   color:rgba(0,0,0,.65);
-  font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+  font-family:'GraphikMedium', Helvetica, Arial, sans-serif;
 }
 
 .post-category{
   color:#84736C;
-  font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+  font-family:'GraphikMedium', Helvetica, Arial, sans-serif;
   text-transform:uppercase;
   margin-top:.7em;
   letter-spacing: .1em;
@@ -943,7 +960,7 @@ div.carousel-caption > h3.p-5{
   gap: 30px;
   // padding:1em;
   // margin:20px;
-  font-family: 'ApercuMedium', Helvetica, Arial, sans-serif;
+  font-family: 'GraphikMedium', Helvetica, Arial, sans-serif;
 }
 .s-lc-ea-l{
   display:none;
@@ -956,7 +973,7 @@ i.fas.fa-2x.fa-arrow-circle-right {
 }
 
 div#s-lg-widget-1579290774229 li {
-    font-family: 'LyonRegular', serif;
+    font-family: 'GraphikRegular', Helvetica, Arial, sans-serif;
 }
 
 tr.s-lc-ea-ttit a {
