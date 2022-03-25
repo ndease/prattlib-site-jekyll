@@ -143,13 +143,12 @@ h1  {
 }
 }
 h2  {
-    font-size:  1.5rem;
+    font-size:  2.3rem;
     font-weight:  500;
     line-height:  1.2;
     color:  inherit;
     margin-top:  0;
     letter-spacing:  0.09em;
-    text-transform:  uppercase;
 
 }
 h3  {
@@ -414,6 +413,7 @@ input:-internal-autofill-selected {
     appearance: menulist-button;
     background-image: none !important;
     background-color: transparent !important;
+    color:white !important;
 }
 
  .input-group > .form-control.search-bar:focus{
@@ -437,7 +437,6 @@ input:-internal-autofill-selected {
     text-align:  center;
     margin-top:  30px;
 }
-
 @media (min-width:1000px)  {
     .form-style  {
     position:  relative;
@@ -517,6 +516,10 @@ input:-internal-autofill-selected {
     margin-left:  20%;
     color:  white;
 }
+}
+
+#main img{
+  border-radius:20px;
 }
 .blog  {
     line-height:  1;
@@ -760,8 +763,8 @@ img  {
 }
 
 .expert-tool {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   border:0;
   display: inline-flex;
   justify-content: center;
