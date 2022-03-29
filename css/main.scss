@@ -282,7 +282,6 @@ a  {
 }
 
 /* || Library Styles */
-
  .logo-style  {
     height:  2.1rem;
     margin-top:  -10px;
@@ -308,7 +307,16 @@ ul.navbar-nav{
 
 .dropdown-header{
 font-weight:500;
-font-size:1.2em;  
+font-size:1.2em;
+}
+.nav-item .dropdown a{
+  font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
+}
+.mega-menu{
+  padding:1.5em;
+}
+.mega-menu a {
+  margin:.5em;
 }
 
 .nav-item  {
@@ -501,26 +509,15 @@ input:-internal-autofill-selected {
     color:  white;
 }
 }
-.home-page-splash  {
-    padding:  10px;
-    width:  90%;
-    margin-left:  5%;
-    border-radius:  5px;
-    color:  white;
-   }
+
+table.hours-today {
+    text-align: right;
+    margin-left: auto;
+}
 
 #home-page-motto {
   text-align:left;
   text-shadow: 2px 2px 4px #000000;
-}
-
-@media (min-width:  1000px)  {
-    .home-page-splash  {
-    padding:  10px;
-    width:  60%;
-    margin-left:  20%;
-    color:  white;
-}
 }
 
 #main img{
@@ -829,14 +826,13 @@ cursor: pointer;
 z-index:9000;
 }
 
-.advanced-search{
+.homepage-header-link{
    color:white;
    float:right;
    margin-top:5px;
-   padding-right:35px;
 }
 
-.advanced-search:hover{
+.homepage-header-link:hover{
   color:white;
 }
 
@@ -873,6 +869,7 @@ background-color: transparent;
 #featured-image-attr{
   color:white;
   padding:.3em;
+  margin:0;
   font-family:'GraphikMedium', Helvetica, Arial, sans-serif;
 }
 
