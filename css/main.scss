@@ -296,6 +296,7 @@ a  {
     height:  1.6rem;
 }
 }
+
 .navbar-nav  {
     min-height:  25px;
     padding:  0;
@@ -327,35 +328,38 @@ font-size:1.2em;
     white-space: nowrap;
     font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
+header div.mt-5.mb-4{
+  padding:3em;
+}
 header  {
     position:  relative;
     width:  100%;
     min-height:  auto;
     text-align:  center;
     color:  #fff;
-    // background-image:  url({{site_url}}/img/heading1.jpg);
-    background: linear-gradient(to bottom right, blue, pink);
-    // background-color:  #5BBF53;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(72,72,72,.7)), url({{absolute_url}}/img/prattlibraryfall.jpg);
+    // background-color:black;
     background-position:  center;
     -webkit-background-size:  cover;
     -moz-background-size:  cover;
     background-size:  cover;
 }
-// .header2  {
-//     background-image:  url({{site_url}}/img/campus1.jpg);
-// }
-// .header3  {
-//     background-image:  url({{site_url}}/img/pi_bg4.jpg);
-// }
-// .header4  {
-//     background-image:  url({{site_url}}/img/pi_bg2.jpg);
-// }
-// .header5  {
-//     background-image:  url({{site_url}}/img/pi_bg5.jpg);
-// }
-//
-// // header.featured-image {
-//   background-image:  url({{site_url}}{{site.featured-image}});
+
+.header2  {
+    // background-image:  url({{site_url}}/img/campus1.jpg);
+}
+.header3  {
+    // background-image:  url({{site_url}}/img/pi_bg4.jpg);
+}
+.header4  {
+    // background-image:  url({{site_url}}/img/pi_bg2.jpg);
+}
+.header5  {
+    // background-image:  url({{site_url}}/img/pi_bg5.jpg);
+}
+
+// header.featured-image {
+//   background: url({{site_url}}{{site.featured-image}});
 // }
 
 ul  {
@@ -377,9 +381,7 @@ footer  {
 .card  {
     border:  0px;
 }
-.navbar-custom  {
 
-}
 .navbar-brand{
   font-family: "GraphikMedium", Helvetica, Arial, sans-serif;
   font-size:1.5em;
@@ -391,6 +393,7 @@ footer  {
 }
 .account:hover{
   background-color:white;
+  color:transparent;
 }
 .navbar-custom .navbar-nav .nav-link  {
     color:  white;
@@ -398,7 +401,7 @@ footer  {
     letter-spacing:  .08em;
 }
 .navbar-custom .nav-item.active .nav-link,  .navbar-custom .nav-item:hover .nav-link  {
-    color:  black;
+    color:  #FFB900;
 }
 
 .input-group > .form-control.search-bar  {
@@ -494,6 +497,30 @@ input:-internal-autofill-selected {
     line-height:  1.5em;
     font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
+
+.black > nav.navbar.navbar-dark{
+  background-color:black;
+}
+
+.hours-box{
+  text-align:right;
+}
+
+@media (max-width:1000px){
+  .hours-box{
+    text-align:center;
+    margin-top:1.5em;
+    padding-top:1em;
+    border-top:1px solid white;
+  }
+  div > table.hours-today{
+    text-align:left;
+    margin-right:auto;
+  }
+  a.homepage-header-link{
+    text-align: center;
+  }
+}
 .search-box  {
     padding:  10px;
     width:  90%;
@@ -535,11 +562,6 @@ table.hours-today {
 [data-toggle="collapse"].collapsed i:before  {
     content:  "\f067";
 }
-
-.nav-link:hover  {
-    color:  #FFB900;
-}
-
 .image  {
     display:  block;
     width:  100%;
@@ -773,20 +795,13 @@ img  {
   flex-direction: column;
 }
 
+.expert-tools{
+  text-align:center;
+}
+
 .expert-tool i{
 display:block;
 padding-bottom:.4em;
-}
-@media (max-width: 767px) {
-  .expert-tool {
-      width: 100%;
-      height: 5%;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      font-size: 1em;
-      display: inline-block;
-      line-height: 1em;
-  }
 }
 
 div#s-lg-widget-1579290774229 > ul > li > a {
