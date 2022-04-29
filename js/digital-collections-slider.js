@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.digital-collections-slider').slick({
-    dots: true,
+    dots: false,
  infinite: true,
  speed: 300,
  slidesToShow: 4,
@@ -12,7 +12,6 @@ $(document).ready(function(){
        slidesToShow: 3,
        slidesToScroll: 3,
        infinite: true,
-       dots: true
      }
    },
    {
