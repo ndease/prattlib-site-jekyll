@@ -34,3 +34,5 @@ The Cataloging Lab is a resource for catalogers to explore and discuss how to cr
 - [Reparative Processing: A Case Study in Auditing Legacy Description for Racism.](https://drive.google.com/open?id=1MhOXx5ZlVjb_8pfvvFquMqLsUUlOHFFMT4js5EP4qnA) (Bolding, K.)
 - [The essential guide to conscious language](https://consciousstyleguide.com/). (Yin, K.)
 - [Diversity Style Guide](https://www.diversitystyleguide.com/). (Kanigel, R.)
+
+Drafted by members of the Libraries' DEI Task Force. Last Updated: May 18, 2022.
