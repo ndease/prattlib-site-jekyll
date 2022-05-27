@@ -73,6 +73,10 @@ td.hours-col-time{
 a{
   color:white;
 }
+
+p a {
+  color:white;
+}
 .img-signage{
   object-fit: cover;
   // object-position: center; /* Center the image within the element */
