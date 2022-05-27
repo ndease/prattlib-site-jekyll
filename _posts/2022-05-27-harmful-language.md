@@ -21,7 +21,7 @@ The Pratt Institute Libraries encourage its users to participate in this process
 ## Resources Consulted in Drafting this Statement
 
 Sample Statements:
-The Cataloging Lab is a resource for catalogers to explore and discuss how to create more inclusive and equitable controlled vocabularies. They have compiled statements from many institutions on harmful or offensive language in description and bias in cataloging.
+The Cataloging Lab is a resource for catalogers to explore and discuss how to create more inclusive and equitable controlled vocabularies. They have compiled [statements](http://cataloginglab.org/list-of-statements-on-bias-in-library-and-archives-description/) from many institutions on harmful or offensive language in description and bias in cataloging.
 
 ## Shared Readings, Resources, and Considerations
 
