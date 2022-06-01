@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Requesting Books with ConnectNY"
-date:   2022-05-25
+date:   2022-04-10
 image: img/blog/cny-relaunch.jpg
 categories: News
 image-caption: ConnectNY brand on a blue background of books
