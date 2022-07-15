@@ -4,7 +4,7 @@ title:  "Painting Dolphins: Environmental Approaches to Creativity"
 date:   2022-06-01
 image: img/blog/dolphins.jpg
 categories: Exhibit
-image-caption: Person at the edge of a pier feeding a dolphin fish from a steel bucket.
+image-caption: Person at the edge of a pier observing a dolphin with a brush in its mouth.
 ---
 
 Barbara Levy, Pratt Institute Department of Art Therapy program graduate class of 1990,
