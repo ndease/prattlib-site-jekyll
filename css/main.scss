@@ -95,7 +95,7 @@ html,  body  {
 // }
 
 h1,  h2,  h3,  h4,  h5,  h6  {
-    font-family: 'GraphikMedium', Helvetica, Arial, sans-serif;
+    font-family: 'GraphikRegular', Helvetica, Arial, sans-serif;
     font-weight:  500;
 }
 p,  pre  {
@@ -371,6 +371,19 @@ footer  {
     width:  100%;
     padding:  25px;
     line-height:  1.6em;
+    background-color: #ffce2e;
+    color: #000;
+    font-size:.8em;
+}
+
+footer a{
+  color:black;
+  text-decoration: underline;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color:black;
 }
 @media (max-width:600px){
     footer-content  {
@@ -475,11 +488,14 @@ input:-internal-autofill-selected {
 }
 .btn-primary  {
     margin:  2px;
-    border-width:  1px;
-    border-color:  black;
-    border-radius:20px;
+    border-top: 1px solid rgba(0,0,0,.2);
+    width:100%;
+    text-transform: uppercase;
+    display:block;
     background-color:  white;
     color:  black;
+    padding-top:.5em;
+    font-size:.9em;
     font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 }
 .btn-primary:hover  {
@@ -547,9 +563,6 @@ table.hours-today {
   text-shadow: 2px 2px 4px #000000;
 }
 
-#main img{
-  border-radius:20px;
-}
 .blog  {
     line-height:  1;
     font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
