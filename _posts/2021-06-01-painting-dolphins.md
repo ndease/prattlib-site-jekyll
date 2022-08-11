@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Painting Dolphins: Environmental Approaches to Creativity"
-date:   2022-06-01
+date:   2021-06-01
 image: img/blog/dolphins.jpg
 categories: Exhibit
 image-caption: Person at the edge of a pier observing a dolphin with a brush in its mouth.
