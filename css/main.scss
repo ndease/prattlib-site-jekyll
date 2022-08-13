@@ -210,21 +210,6 @@ a  {
     letter-spacing:  normal;
 }
 
-/* || Library Styles */
- .logo-style  {
-    height:  2.1rem;
-    margin-top:  -10px;
-}
-@media only screen and (max-width:380px)  {
-    a.navbar-brand  {
-    font-size:  1.1rem;
-}
-}
-@media only screen and (max-width:320px)  {
-    .logo-style  {
-    height:  1.6rem;
-}
-}
 
 .navbar-nav  {
     min-height:  25px;
@@ -249,14 +234,6 @@ font-size:1.2em;
   margin:.5em;
 }
 
-.nav-item  {
-    color:  white;
-    margin:0 .5em;
-    text-decoration:  none;
-    font-size:  .95em;
-    white-space: nowrap;
-    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
-}
 header div.mt-5.mb-4{
   padding:3em;
 }
@@ -324,11 +301,51 @@ footer a:hover{
     border:  0px;
 }
 
+
 .navbar-brand{
   font-family: "GraphikMedium", Helvetica, Arial, sans-serif;
-  font-size:1.5em;
-  color:black;
+  font-size:1.8em;
+  color:white;
 }
+
+
+ .logo-style  {
+    height:  30px;
+    margin-top:  -10px;
+}
+@media only screen and (max-width:450px)  {
+   .navbar-brand  {
+    font-size:  1.2em;
+}
+}
+@media only screen and (max-width:320px)  {
+    .logo-style  {
+    height:  1.1em;
+}
+}
+nav.navbar{
+background-color:black;
+border-bottom:1px solid white;
+}
+
+.nav-item  {
+    color:  white;
+    margin:0 .5em;
+    text-decoration:  none;
+    font-size:  .95em;
+    white-space: nowrap;
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
+}
+
+.navbar-dark .navbar-nav a.nav-link{
+font-size:1.3em;
+color:white;
+}
+
+a.nav-link:hover{
+text-decoration:underline;
+}
+
 .account{
   border:1px solid white;
   border-radius:30px;
@@ -336,14 +353,6 @@ footer a:hover{
 .account:hover{
   background-color:white;
   color:transparent;
-}
-.navbar-custom .navbar-nav .nav-link  {
-    color:  white;
-    font-size:  1.1rem;
-    letter-spacing:  .08em;
-}
-.navbar-custom .nav-item.active .nav-link,  .navbar-custom .nav-item:hover .nav-link  {
-    color:  #FFB900;
 }
 
 .input-group > .form-control.search-bar  {
@@ -441,10 +450,6 @@ footer a {
     font-size:  1.05em;
     line-height:  1.5em;
     font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
-}
-
-.black > nav.navbar.navbar-dark{
-  background-color:black;
 }
 
 .hours-box{
