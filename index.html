@@ -9,7 +9,7 @@ layout: home
         <div class="container">
             <div class="row">
                 <h2 class="hide">Research Tools</h2>
-                <div class="col-lg-12 col-sm-12 mt-1">
+                <div class="col-lg-12 col-sm-12 mt-3 mb-3">
                     <div class="card">
                         <div class="card-body expert-tools">
                             <div>
@@ -45,19 +45,19 @@ layout: home
                           {%- assign postImage = "/assets/images/image-default.jpg" -%}
                           <img src="{{- postImage | relative_url -}}" alt="" class="card-img-top">
                         {%- endif -%}
-                        <span class="post-category">{{ post.categories }}</span>
                         <h3 class="h4">
                             {{ post.title | escape }}
                         </h3>
+                        <span class="post-category">{{ post.categories }}</span>
                         </a>
                         <!-- {%- if site.show_excerpts -%}
                           {{ post.excerpt }}
                         {%- endif -%} -->
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                         <p class="post-meta"><span>{{ post.date | date: date_format }}</span>&nbsp;
                         {%- if post.author -%}
                           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
-                        {%- endif -%}</p>
+                        {%- endif -%}</p> -->
                         </div>
                         </div>
                       {%- endfor -%}
@@ -70,7 +70,7 @@ layout: home
                   <div class="col-lg-6 col-sm-12 mb-4">
                     <div class="card">
 <div class="card-body">
-<h2 class="card-title">Blog</h2><hr>
+<h2 class="card-title">Blog</h2>
 <script>
 var springStats = springStats || {};
 springStats.saConfig = springStats.saConfig || {
@@ -99,8 +99,7 @@ springshare_widget_config_1579290774229 = { path: 'blogs' };
               <div class="card">
                   <div class="card-body">
                     <h2 class="card-title">Featured</h2>
-                    <hr>
-                    <div class="text-center">
+                    <div>
                       <h3 class="h4">Searching Full Text Theses at Pratt</h3>
                     <iframe id="kaltura_player_1646691027" src="https://cdnapisec.kaltura.com/p/2071011/sp/207101100/embedIframeJs/uiconf_id/45309441/partner_id/2071011?iframeembed=true&playerId=kaltura_player_1646691027&entry_id=1_tdvzj51b" width="100%" height="300" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
                     </div>
@@ -115,7 +114,7 @@ springshare_widget_config_1579290774229 = { path: 'blogs' };
  <div id="api_upc_cid10470_iid4676"></div><script src="https://api3.libcal.com/api_events.php?iid=4676&m=upc&cid=10470&audience=&c=&d=&l=5&context=object&format=js"> </script>
  </div> -->
  <div class="container">
-   <h2 class="text-center">Digital Collections</h2><hr>
+   <h2 class="text-center mb-3">Digital Collections</h2>
      <div class="digital-collections-slider">
   <div><a href="https://www.jstor.org/site/pratt/libraries-exhibitions/" target="_blank" class="h3 post-link"><img class="center-cropped" src="/img/digital-collections/exhibits.png" alt="exhibit collage">Library Exhibits</a>
   <p>This collection features posters, fliers, invitations and images documenting exhibitions held in the library between 2008 and the present.</p>

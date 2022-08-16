@@ -30,7 +30,7 @@ h1,  h2,  h3,  h4,  h5,  h6  {
 p,  pre  {
     font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
     margin:  1.125em 0;
-    line-height:  1.55em;
+    line-height:  1.7em;
     font-size:  1.04em;
     letter-spacing:  normal;
 }
@@ -40,13 +40,13 @@ p a  {
     border-bottom:  1px solid #0C77D4;
     border-bottom-width:  1px;
     border-bottom-style:  solid;
-    border-bottom-color:  #0C77D4;
-    box-shadow:  inset 0 -1px 0 #0C77D4;
+    border-bottom-color:  black;
+    box-shadow:  inset 0 -1px 0 black;
     text-decoration:  none;
 }
 p a:hover  {
-    color:  #FFFFFF;
-    background-color:  #0C77D4;
+    color:  white;
+    background-color: black;
     padding:  2px;
     transition:  background .15s cubic-bezier(.33,  .66,  .66,  1);
     transition-property:  background;
@@ -72,7 +72,7 @@ h1  {
 }
 }
 h2  {
-    font-size:  2.3rem;
+    font-size:  1.98rem;
     font-weight:  500;
     line-height:  1.2;
     color:  inherit;
@@ -243,7 +243,7 @@ header  {
     min-height:  auto;
     text-align:  center;
     color:  #fff;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(72,72,72,.7)), url({{absolute_url}}/img/prattlibraryfall.jpg);
+   background-image: linear-gradient(to bottom,rgba(0,0,0,.9),rgba(72,72,72,.7)), url({{absolute_url}}/img/prattlibraryfall.jpg);
     // background-color:black;
     background-position:  center;
     -webkit-background-size:  cover;
@@ -252,16 +252,16 @@ header  {
 }
 
 .header2  {
-    // background-image:  url({{site_url}}/img/campus1.jpg);
+    background-image:  url({{site_url}}/img/campus1.jpg);
 }
 .header3  {
-    // background-image:  url({{site_url}}/img/pi_bg4.jpg);
+    background-image:  url({{site_url}}/img/pi_bg4.jpg);
 }
 .header4  {
-    // background-image:  url({{site_url}}/img/pi_bg2.jpg);
+    background-image:  url({{site_url}}/img/pi_bg2.jpg);
 }
 .header5  {
-    // background-image:  url({{site_url}}/img/pi_bg5.jpg);
+    background-image:  url({{site_url}}/img/pi_bg5.jpg);
 }
 
 // header.featured-image {
@@ -280,6 +280,7 @@ footer  {
     background-color: #ffce2e;
     color: #000;
     font-size:.8em;
+    margin-top:3em;
 }
 
 footer a{
@@ -342,8 +343,8 @@ font-size:1.3em;
 color:white;
 }
 
-a.nav-link:hover{
-text-decoration:underline;
+.navbar-dark .navbar-nav a.nav-link:hover{
+      color: #ffce2e;
 }
 
 .account{
@@ -359,21 +360,21 @@ text-decoration:underline;
     border-top-left-radius:  2rem;
     border-bottom-left-radius:  2rem;
     height:  50px;
-    background-color:  transparent;
+    background-color:  white;
     border: 1px solid white;
     border-right:0;
 }
 
 .input-group > .form-control.search-bar::placeholder {
-  color: white;
+  color: black;
   opacity: 1;
 }
 
 .form-control{
-  color:white;
+  color:black;
 }
 .form-control:focus{
-  color:white;
+  color:black;
 }
 
 input:-internal-autofill-selected {
@@ -389,8 +390,8 @@ input:-internal-autofill-selected {
 .input-group-append > button.btn.search-button  {
     border-top-right-radius:  2rem;
     border-bottom-right-radius:  2rem;
-    background-color:  transparent;
-    color:white;
+    background-color:  white;
+    color:black;
     border: 1px solid white;
     border-left:0;
     height:  50px;
@@ -426,23 +427,19 @@ input:-internal-autofill-selected {
 }
 .btn-primary  {
     margin:  2px;
-    border-top: 1px solid rgba(0,0,0,.2);
-    width:100%;
-    text-transform: uppercase;
-    display:block;
-    background-color:  white;
-    color:  black;
-    padding-top:.5em;
+    background-color:black;
+    border-color:black;
+    color:  white;
+    padding:.7em;
+    border-radius:25px;
     font-size:.9em;
-    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
 }
 .btn-primary:hover  {
-    margin:  2px;
-    border-width:  1px;
-    border-color:  black;
-    background-color:  #0C77D4;
-    color:  white;
-    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
+    background-color:  #ffce2e;
+    border-color:  #ffce2e;
+    color:black;
+    text-decoration: none;
 }
 
 footer a {
@@ -751,12 +748,35 @@ display:block;
 padding-bottom:.4em;
 }
 
-div#s-lg-widget-1579290774229 > ul > li > a {
-  font-size:  1.05em;
-  line-height:  1.5em;
-  font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
+a.btn.btn-primary.expert-tool{
+  background-color:transparent;
+  color:black;
+  padding:0;
+  font-size:1em;
 }
 
+a.btn.btn-primary.expert-tool:hover{
+  background-color:#ffce2e;
+  color:black;
+}
+
+
+div#s-lg-widget-1579290774229 > ul > li > a {
+  font-size:  1.2em;
+  line-height:  1.5em;
+  color:black;
+  font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
+}
+div#s-lg-widget-1579290774229 > ul > li {
+  border-bottom:1px solid lightgray;
+  padding:1em 0;
+  font-size:.9em;
+}
+
+a.s-lg-widget-list-more-results{
+    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
+    color:black;
+}
 .pratt-btn{
   font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
 	background-color:#FFB900;
@@ -790,6 +810,7 @@ z-index:9000;
 
 .homepage-header-link{
    color:white;
+   text-decoration: underline;
    float:right;
    margin-top:5px;
 }
@@ -862,10 +883,8 @@ div.card a.post-link:hover{
 }
 
 .post-category{
-  color:#84736C;
-  font-family:'GraphikMedium', Helvetica, Arial, sans-serif;
-  text-transform:uppercase;
-  margin-top:.7em;
+  font-family:'GraphikRegular', Helvetica, Arial, sans-serif;
+  font-size:.8em;
   letter-spacing: .1em;
 }
 
