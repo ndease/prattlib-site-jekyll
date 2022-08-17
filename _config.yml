@@ -55,7 +55,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-url                 : https://library.pratt.edu
+url                 : 
 baseurl             :
 show_dir_listing    : false
 

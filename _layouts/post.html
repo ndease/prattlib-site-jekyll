@@ -4,7 +4,11 @@
     {% include head.html %}
   </head>
 <body>
+<header>
+<span class="black">
 {% include nav.html %}
+</span>
+</header>
 {%- if page.image -%}
   <img src="{{- page.image | relative_url -}}" alt="{{page.image-caption}}" class="featured-image-post">
   <div class="container">

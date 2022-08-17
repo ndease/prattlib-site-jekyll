@@ -6,14 +6,13 @@
     <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
   </head>
 <body>
-<a href="#main" class="hide">Skip to main content</a>
-<a href="#search" class="hide">Skip to library search</a>
+<a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
 <header class="featured-image">
-  {% include nav.html %}
-  <div class="container">
-    <div class="row">
-    <div class="home-page-splash">
-    <h1 id="home-page-motto">RESEARCH & DISCOVER</h1>
+    {% include nav.html %}
+  <div class="container mt-5 mb-4">
+    <div class="row mt-5 mb-3">
+    <div class="col-lg-8 mt-5">
+            <h1 class="text-left">Research & Discover</h1>
     <!-- EBSCO Search Box Begins -->
     <form action="https://searchbox.ebsco.com/search/">
       <input name="schemaId" value="search" type="hidden" />
@@ -25,9 +24,9 @@
       <input name="site" value="eds-live" type="hidden" />
       <input name="direct" value="true" type="hidden" />
       <div class="input-group input-group-lg">
-      <input id="search" aria-label="Search through library collections" name="bquery" type="text" class="form-control py=2 shadow search-bar" placeholder="Search books, articles, media and more..." />
+      <input id="search" aria-label="Search through library collections" name="bquery" type="text" class="form-control py=2 search-bar" placeholder="Search books, articles, media and more..." />
       <span class="input-group-append">
-      <button class="btn btn-outline-secondary border-0 search-button" aria-label="library search" value="Search" type="submit"><i class="fa fa-search"></i></button>
+      <button class="btn btn-outline-secondary border-1 search-button" aria-label="library search" value="Search" type="submit"><i class="fa fa-search"></i></button>
       </span>
     </div>
       <!-- <label style="display:block" for="fullText">
@@ -44,8 +43,15 @@
       </label> -->
     </form>
     <!-- EBSCO Search Box Ends -->
-     <a class="advanced-search" href="https://search.ebscohost.com/login.aspx?direct=true&authtype=sso&custid=s8440772&setup=1&groupid=main&profile=eds">Advanced Search</a>
+     <a class="homepage-header-link" href="https://search.ebscohost.com/login.aspx?direct=true&authtype=sso&custid=s8440772&setup=1&groupid=main&profile=eds">Advanced Search</a>
     </div>
+    <div class="col-lg-4 mt-5 hours-box">
+      <h2 class="h6"><i class="far fa-clock" aria-hidden="true"></i>&nbsp;&nbsp;Today's Hours</h2>
+      <div id="api_hours_today_iid4676_lid0"></div>
+      <script src="https://api3.libcal.com/api_hours_today.php?iid=4676&lid=0&format=js&systemTime=0&context=object">
+      </script>
+      <a class="homepage-header-link" href="https://pratt.libcal.com/hours">More hours</a>
+  </div>
       </div>
    </div>
    <p id="featured-image-attr">{{site.featured-image-attr}}</p>
