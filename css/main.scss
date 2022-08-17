@@ -37,7 +37,7 @@ p,  pre  {
 p a  {
     color:  #000000;
     padding:  2px;
-    border-bottom:  1px solid #0C77D4;
+    border-bottom:  1px solid black;
     border-bottom-width:  1px;
     border-bottom-style:  solid;
     border-bottom-color:  black;
@@ -195,7 +195,7 @@ p  {
     font-size:  1em;
 }
 a  {
-    color:  #0C77D4;
+    color:  black;
     -webkit-transition-property:  color;
     -moz-transition-property:  color;
     -o-transition-property:  color;
@@ -226,12 +226,6 @@ font-size:1.2em;
 }
 .nav-item .dropdown a{
   font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
-}
-.mega-menu{
-  padding:1.5em;
-}
-.mega-menu a {
-  margin:.5em;
 }
 
 header div.mt-5.mb-4{
@@ -335,7 +329,7 @@ border-bottom:1px solid white;
     text-decoration:  none;
     font-size:  .95em;
     white-space: nowrap;
-    font-family:  "GraphikMedium",  Helvetica,  Arial,  sans-serif;
+    font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
 }
 
 .navbar-dark .navbar-nav a.nav-link{
@@ -521,7 +515,7 @@ table.hours-today {
     width:  100%;
     opacity:  0;
     transition:  .5s ease;
-    background-color:  #0C77D4;
+    background-color:  black;
 }
 #overlay-archives  {
     position:  absolute;
@@ -533,7 +527,7 @@ table.hours-today {
     width:  100%;
     opacity:  0;
     transition:  .5s ease;
-    background-color:  #0C77D4;
+    background-color:  black;
 }
 #overlay-exhibits  {
     position:  absolute;
@@ -595,87 +589,6 @@ img  {
     max-width:  100%;
     flex-shrink:  0;
 }
-.image-text  {
-    color:  white;
-    font-size:  1.3rem;
-    position:  absolute;
-    top:  50%;
-    left:  50%;
-    -webkit-transform:  translate(-50%,  -50%);
-    -ms-transform:  translate(-50%,  -50%);
-    transform:  translate(-50%,  -50%);
-    text-align:  center;
-}
-.logo  {
-    display:  inline-block;
-    margin-top:  .3em;
-}
-.logo a  {
-    background:  url(https://library.pratt.edu/img/logo-white.png) no-repeat;
-    background-size:  90px 30px;
-    display:  block;
-    height:  30px;
-    width:  90px;
-    overflow:  hidden;
-    text-indent:  -1999px;
-    z-index:  1000;
-    background-repeat:  no-repeat;
-    -webkit-transition-duration:  0.2s;
-    -moz-transition-duration:  0.2s;
-    -o-transition-duration:  0.2s;
-    transition-duration:  0.2s;
-    -webkit-transition-property:  height;
-    -moz-transition-property:  height;
-    -o-transition-property:  height;
-    transition-property:  height;
-    -webkit-transition-property:  width;
-    -moz-transition-property:  width;
-    -o-transition-property:  width;
-    transition-property:  width;
-    -webkit-transition-property:  margin;
-    -moz-transition-property:  margin;
-    -o-transition-property:  margin;
-    transition-property:  margin;
-}
-.svg .logo a  {
-    background-image:  url(https://library.pratt.edu/img/logo-white.png);
-}
-.logo a:hover  {
-    background-image:  url(https://library.pratt.edu/img/logo-gold.png);
-}
-.svg .logo a:hover  {
-    background-image:  url(https://library.pratt.edu/img/logo-gold.png);
-}
-@media (max-width: 70em)  {
-    .logo a  {
-    background-size:  90px 30px;
-    height:  30px;
-    width:  90px;
-    background-position:  50% 50%;
-}
-}
-@media screen and (max-width: 956px)  {
-    .logo  {
-    padding-top:  .75em;
-    padding-bottom:  .5em;
-    margin-top:  0;
-    float:  none;
-    margin-left:  auto;
-    margin-right:  auto;
-    display:  block;
-    width:  100px;
-    margin-bottom:  0;
-}
-}
-.ie8 .logo a,  .lt-ie8 .logo a  {
-    background-image:  url(https://library.pratt.edu/img/logo-black-ie.png);
-    width:  90px;
-    height:  30px;
-    background-size:  auto;
-}
-.ie8 .logo a:hover,  .lt-ie8 .logo a:hover  {
-    background-image:  url(https://library.pratt.edu/img/logo-gold-ie.png);
-}
 
 .search-box li a  {
     color:  white;
@@ -688,7 +601,7 @@ img  {
 }
 .dropdown-item:hover  {
     color:  white;
-    background-color:  #0C77D4;
+    background-color:  black;
 }
 
 .directory-style{
@@ -727,7 +640,7 @@ img  {
     background-color:  white;
 }
 .btn-link  {
-    color:  #0C77D4;
+    color:  black;
 }
 
 .expert-tool {
@@ -790,7 +703,7 @@ display:block;
         transition-duration: 0.2s;}
 
 .pratt-btn:hover{
-    background-color:#0C77D4;
+    background-color:black;
     color:white;
     text-decoration:none;
         }
@@ -870,7 +783,7 @@ div.card > a.post-link{
   color:#212529;
 }
 div.card a.post-link:hover{
-  color:#0C77D4;
+  color:black;
   text-decoration: none;
 }
 .post-link h3.h4{
@@ -915,16 +828,16 @@ font-size:1em;
 .post-content a{
   color:  #000000;
   padding:  2px;
-  border-bottom:  1px solid #0C77D4;
+  border-bottom:  1px solid black;
   border-bottom-width:  1px;
   border-bottom-style:  solid;
-  border-bottom-color:  #0C77D4;
-  box-shadow:  inset 0 -1px 0 #0C77D4;
+  border-bottom-color:  black;
+  box-shadow:  inset 0 -1px 0 black;
   text-decoration:  none;
 }
 .post-content a:hover{
   color:  #FFFFFF;
-  background-color:  #0C77D4;
+  background-color:  black;
   padding:  2px;
   transition:  background .15s cubic-bezier(.33,  .66,  .66,  1);
   transition-property:  background;
@@ -998,7 +911,7 @@ tr.s-lc-ea-ttit a {
 }
 
 tr.s-lc-ea-ttit a:hover {
-  color:#0C77D4;
+  color:black;
   text-decoration: none;
 }
 .s-lc-ea-tdat{
