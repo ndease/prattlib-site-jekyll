@@ -835,6 +835,19 @@ font-size:1em;
   box-shadow:  inset 0 -1px 0 black;
   text-decoration:  none;
 }
+
+.post-content a.btn{
+    padding:1.25rem;
+    border:0;
+    box-shadow:none;
+}
+
+.post-content a.btn:hover{
+    padding:1.25rem;
+    border:0;
+    box-shadow:none;
+}
+
 .post-content a:hover{
   color:  #FFFFFF;
   background-color:  black;
