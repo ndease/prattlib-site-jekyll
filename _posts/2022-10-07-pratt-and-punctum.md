@@ -4,7 +4,7 @@ title:  "Pratt and Punctum: A Program on Open Access and Climate Justice"
 date:   2022-10-07
 image: img/blog/IG-Blank-Ocean.png
 categories: Event
-image-caption: Pratt Institute Library Building
+image-caption: an underwater turtle swimming through trash with the Open Access Logo on top
 ---
 
 In observance of [International Open Access Week](https://www.openaccessweek.org/), Pratt Institute Libraries is hosting a virtual event to showcase its partnership with [Punctum Books](https://punctumbooks.com/). Since the theme for Open Access Week this year is "Climate Justice", the program will explore how Open Access publishers like Punctum serve as good platforms for sharing knowledge and expressing ideas on this timely topic. 
