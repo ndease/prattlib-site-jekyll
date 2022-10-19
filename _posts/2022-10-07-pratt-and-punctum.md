@@ -7,7 +7,7 @@ categories: Event
 image-caption: an underwater turtle swimming through trash with the Open Access Logo on top
 ---
 
-In observance of [International Open Access Week](https://www.openaccessweek.org/), Pratt Institute Libraries is hosting a virtual event to showcase its partnership with [Punctum Books](https://punctumbooks.com/). Since the theme for Open Access Week this year is "Climate Justice", the program will explore how Open Access publishers like Punctum serve as good platforms for sharing knowledge and expressing ideas on this timely topic. 
+In observance of [International Open Access Week](https://www.openaccessweek.org/), Pratt Institute Libraries is hosting a virtual event to showcase its partnership with [Punctum Books](https://punctumbooks.com/). Since the theme for Open Access Week this year is "Climate Justice", the program will explore how Open Access publishers like Punctum serve as good platforms for sharing knowledge and expressing ideas on this timely topic. (see [Open Access Publishing](https://libguides.pratt.edu/c.php?g=958151&p=6921844))
 
 ## Mon, October 24, 2022, 2:00 PM – 4:00 PM EDT
 
