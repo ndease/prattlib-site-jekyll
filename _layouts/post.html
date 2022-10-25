@@ -4,6 +4,7 @@
     {% include head.html %}
   </head>
 <body>
+<a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
 <header>
 <span class="black">
 {% include nav.html %}
@@ -19,7 +20,7 @@
   <img src="{{- postImage | relative_url -}}" alt="" class="featured-image-post">
 {%- endif -%}
 <div class="container">
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article id="main" class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1><hr>
   <p class="post-meta">
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
