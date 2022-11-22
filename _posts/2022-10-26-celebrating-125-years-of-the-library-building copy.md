@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Celebrating 125 Years of the Library Building"
-date:   2022-10-20
+date:   2022-10-26
 image: https://specialcollections.pratt.edu/125-anniversary/img/derivatives/iiif/images/181686/full/1140,/0/default.jpg
 categories: Digital-Exhibit
 image-caption: Pratt Institute Library Building
