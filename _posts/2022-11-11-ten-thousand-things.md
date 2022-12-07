@@ -9,7 +9,7 @@ image-caption: Jade green earrings on a black background.
 
 When Ron Anderson and David Rees launched [Ten Thousand Things](https://www.tenthousandthingsnyc.com/) 30-years ago they captured the zeitgeist of the moment in their ground-breaking minimalist jewels. The capsule retrospective exhibition highlights media moments, the celebrities who became fans and treasures made by the self-taught design duo on the bench.
 
-Exhibit on View: November 15 - 30, Pratt Institute Library, Floor 3, Brooklyn Campus.
+Exhibit on View: November 15 - December 15, Pratt Institute Library, Floor 3, Brooklyn Campus.
 <hr>
 <h3 class="h2">Marion Fasel in conversation with TenThousandThings</h3>
 
