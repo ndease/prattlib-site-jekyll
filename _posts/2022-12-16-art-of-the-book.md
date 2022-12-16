@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Art of the Book: Tech-545 & Tech-546"
-date:   2022-04-18
+title:  "Art of the Book: Tech-545"
+date:   2022-12-15
 image: img/blog/2022-art-of-the-book.jpg
 categories: Exhibit
 image-caption:  four brown pages stitched together with teal thread inside of a green box.
