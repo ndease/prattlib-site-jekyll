@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Updated Collection Development Policy"
-date:   2022-12-16
+date:   2022-12-18
 image: img/blog/books-statement.jpg
 categories: News
 image-caption: A stack of books on a blurry gray background
