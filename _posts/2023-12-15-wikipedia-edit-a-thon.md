@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Wikipedia Edit-a-thon"
-date:   2023-01-12
+date:   2022-12-15
 image: img/blog/Wiki_Screen.jpg
 categories: Event
 image-caption:  A blue desktop computer monitor on a pink background with the phrase Wikipedia Edit-A-thon emblazoned on the screen.
