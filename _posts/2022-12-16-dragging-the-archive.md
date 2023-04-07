@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dragging the Archive"
-date:   2023-01-12
+date:   2022-12-16
 image: img/blog/dragging-archive.jpg
 categories: Exhibit
 image-caption:  A person staring down at a white desktop computer on a table being filmed by another person with a camera on a tripod.
