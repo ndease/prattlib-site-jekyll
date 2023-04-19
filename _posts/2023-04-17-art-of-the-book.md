@@ -4,7 +4,7 @@ title:  "Art of the Book: Tech-545 & 546"
 date:   2023-04-17
 image: img/blog/ArtOfTheBookPosterSPR2023.jpg
 categories: Exhibit
-image-caption:  four brown pages stitched together with teal thread inside of a green box.
+image-caption:  an abstract book-like object with a rainbow of colors.
 ---
 
 An emphasis on both technique and innovation allows students to explore the conceptual and material basis of the genre of artist books. Taught by Professor Miriam Schaer in the Department of Fine Arts, the class provides a forum to develop book concepts, while learning a range of traditional and experimental bindings and transforming them into unique works of art.
