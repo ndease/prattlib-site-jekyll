@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring Slapstick: 16mm Film Screening"
-date:   2023-04-19
+date:   2022-04-19
 image: img/blog/springslapstick23.jpg
 categories: Screening
 image-caption:  a figure of a man in a suit with an arm slapping a pie in his face
