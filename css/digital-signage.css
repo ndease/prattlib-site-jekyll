@@ -59,6 +59,11 @@ font-weight: bold;
 font-family: 'apercuMedium',arial,sans-serif;
 }
 
+table.hours-today{
+  margin-right: auto;
+  margin-left:auto;
+}
+
 th.hours-col-loc{
 color: white;
 text-transform: uppercase;
@@ -142,6 +147,10 @@ overflow: hidden;
 
 .qr-code{
   max-height:10vw;
+  display:block;
+  margin-top:2em;
+  margin-left:auto;
+  margin-right:auto;
 }
 .lib-site-alert{
   top:0;
@@ -176,30 +185,25 @@ hr{
 
   #today{
     text-align: center;
-    font-size:5vh;
+    font-size:3vh;
 font-family: 'ApercuMedium', Helvetica, Arial, sans-serif;
 text-transform: uppercase;
 margin-bottom: 1em;
 letter-spacing: .1em;
   }
-/*media queries*/
-  @media (orientation:landscape){
-  #api_hours_today_iid4676_lid0 table{
-    font-size:5vh;
-  }
-  }
 
-  @media (orientation:portrait){
     #api_hours_today_iid4676_lid0{
       font-size:5vw;
       margin-left:auto;
       margin-right:auto;
+      margin-top: 10vw;
+      margin-bottom:10vw;
     }
 
     .fa-clock{
       display:block;
-      font-size:15vh;
-      margin:.2em;
+      font-size:12vh;
+      margin:.5em;
     }
 
     .lib-site-alert{
@@ -217,20 +221,25 @@ letter-spacing: .1em;
     h2.h1{
       font-size:5vw;
       text-align:center;
+
     }
 
     h3.h3 a {
-      font-size:4vw;
+      font-size:4.5vw;
+    }
+
+    .post-category{
+      font-size:2em;
     }
 
     .post-excerpt p{
-      font-size:3.5vw;
+      font-size:3vw;
       display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
     }
-  }
+
 
 #api_upc_cid10470_iid4676 a{
   color:white;

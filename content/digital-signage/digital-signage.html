@@ -10,19 +10,19 @@ layout: digital-signage
       <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="15000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h2 class="h1">Library Hours</h2>
-            <div class="row">
-              <div class="col-lg-5 text-center">
-                <i class="far fa-8x fa-clock"></i>
-                <img class="qr-code" src="{{site_url}}/img/hours-qrcode.png" alt="">
+                          <div class="col-12 text-center">
+                <i class="far fa-2x fa-clock"></i>
               </div>
-              <div class="col-lg-7">
-                <h3 class="h2" id="today">Today</h3>
+            <h2 class="h1 text-center">Library Hours</h2>
+            <div class="row">
+              <div class="col-12 text-center">
+                <h3 id="today">Today</h3>
                 <div id="api_hours_today_iid4676_lid0"></div>
                 <script src="https://api3.libcal.com/api_hours_today.php?iid=4676&lid=0&format=js&systemTime=0&context=object">
                 </script>
               </div>
             </div>
+          <img class="qr-code" src="{{site_url}}/img/hours-qrcode.png" alt="">
           </div>
           <!-- <div class="carousel-item">
             <div id="api_today_cid10470_12017_iid4676"></div>
@@ -32,9 +32,9 @@ layout: digital-signage
           {%- if site.posts.size > 0 -%}
               {%- for post in site.posts -%}
           <div class="carousel-item news-slide">
-          <h2 class="h1">Library News</h2>
+          <h2 class="h1 text-center">Library News</h2>
             <div class="">
-            <div class="sign-column">
+            <div class="col-12">
                 {%- if post.image -%}
                 <a href="{{ post.url | escape }}">
                   <img src="{{- post.image | relative_url -}}" alt="{{post.image-caption}}" class="img-signage">
@@ -56,7 +56,7 @@ layout: digital-signage
                     • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
                   {%- endif -%}</p> -->
                   </div>
-                  <div class="sign-column post-excerpt">
+                  <div class="col-12 post-excerpt">
                 <span class="post-category">{{ post.categories }}</span>
                 {%- if site.show_excerpts -%}
                   {{ post.excerpt }}
@@ -70,10 +70,10 @@ layout: digital-signage
           <div class="carousel-item">
             <h2 class="h1">Connect with us!</h2>
             <div class="">
-                <div class="sign-column">
+                <div class="col-12">
                 <img class="img-signage" src="{{site_url}}{{site.featured-image}}" alt="{{site.featured-alt}}">
                 </div>
-                <div class="sign-column socials">
+                <div class="col-12 socials">
                   <ul>
                     <li class="h3"><a target="_blank" aria-label="Instagram" href="https://www.instagram.com/prattlibraries/?hl=en"><i class="fab  fa-instagram"></i>&nbsp;&nbsp;@prattlibraries</a></li>
                     <li class="h3"><a target="_blank" aria-label="Facebook" href="https://www.facebook.com/pages/Pratt-Institute-Libraries/7307432007"><i class="fab  fa-facebook-square"></i>&nbsp;&nbsp;Pratt Institute Libraries</a></li>
