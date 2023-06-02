@@ -104,6 +104,12 @@ p a {
   display: inline-block;
 }
 
+.col-lg-7 > #api_hours_today_iid4676_lid0{
+  font-size:2.5vw;
+  margin:0;
+  margin-top:2em;
+}
+
 .post-excerpt p{
   font-size:3vh;
   display: -webkit-box;
@@ -284,6 +290,24 @@ letter-spacing: .1em;
   -webkit-animation: text-scroll-animation 15s linear infinite;
   animation: text-scroll-animation 15s linear infinite;
 }
+/*updates for horizontal digital sign */
+
+.sign-column p{
+  font-size:1em;
+}
+
+.sign-column > span.post-category{
+  font-size:1em;
+}
+.sign-column h3.h3 > .post-link{
+  font-size:1.8em;
+}
+
+h3.text-center.today-horizontal#today{
+  font-size:1.5em;
+  margin-top:.3em;
+  margin-bottom:0;
+}
 
 /* for Firefox */
 @-moz-keyframes text-scroll-animation {
@@ -308,3 +332,5 @@ letter-spacing: .1em;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+
+
