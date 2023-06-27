@@ -32,6 +32,41 @@ layout: home
             <div class="container text-left">
                 <h2 class="sr-only">News</h2>
                 <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card lib-news">
+                         <a id="event1Link" class="post-link" href>
+                         <img id="event1Img" class="center-cropped" alt src="#">
+                         <h3 id="event1Title" class="h4"></h3>
+                        <span id="event1Cat" class="post-category"></span>
+                        <span id="event1Description" class="d-none"></span>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card lib-news">
+                         <a id="event2Link" class="post-link" href>
+                         <img id="event2Img" class="center-cropped" alt src="#">
+                         <h3 id="event2Title" class="h4"></h3>
+                        <span id="event2Cat" class="post-category"></span>
+                        <span id="event2Description" class="d-none"></span>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="card lib-news">
+                         <a id="event3Link" class="post-link" href>
+                         <img id="event3Img" class="center-cropped" alt src="#">
+                         <h3 id="event3Title" class="h4"></h3>
+                        <span id="event3Cat" class="post-category"></span>
+                        <span id="event1Description" class="d-none"></span>
+                        </a>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+                <script src="{{ '/js/libcal-events.js' | absolute_url | append: cacheBust }}"></script>
+<!--                 <div class="row">
                   {%- if site.posts.size > 0 -%}
                       {%- for post in site.posts -%}
                       <div class="col-lg-4 col-sm-6 mb-4">
@@ -48,20 +83,11 @@ layout: home
                         </h3>
                         <span class="post-category">{{ post.categories }}</span>
                         </a>
-                        <!-- {%- if site.show_excerpts -%}
-                          {{ post.excerpt }}
-                        {%- endif -%} -->
-                        <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                        <p class="post-meta"><span>{{ post.date | date: date_format }}</span>&nbsp;
-                        {%- if post.author -%}
-                          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
-                        {%- endif -%}</p> -->
                         </div>
                         </div>
                       {%- endfor -%}
-                    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
                   {%- endif -%}
-                </div>
+                </div> -->
             </div>
             <div class="container">
                 <div class="row">
