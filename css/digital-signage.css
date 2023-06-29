@@ -309,6 +309,13 @@ h3.text-center.today-horizontal#today{
   margin-bottom:0;
 }
 
+.post-excerpt > .eventDesc *{
+    display:none;
+}
+.post-excerpt > .eventDesc p:first-child{
+    display:block;
+}
+
 /* for Firefox */
 @-moz-keyframes text-scroll-animation {
   from { -moz-transform: translateX(100%); }

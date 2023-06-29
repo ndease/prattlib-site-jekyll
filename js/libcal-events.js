@@ -1,8 +1,8 @@
 var token; // in global scope.
 var data = {
   "grant_type":"client_credentials",
-  "client_id": "CLIENT ID HERE",
-  "client_secret": "CLIENT SECRET HERE"
+  "client_id": "INSERT CLIENT ID HERE",
+  "client_secret": "INSERT CLIENT SECRET HERE"
 }; //note that this secret is for a read only app!
 
 // construct an HTTP request
@@ -31,17 +31,17 @@ eventRequest.onload = function() {
 document.querySelector("#event1Title").innerText= response.events[0].title;
 document.querySelector("#event1Link").href= response.events[0].url.public;
 document.querySelector("#event1Img").src= response.events[0].featured_image;
-document.querySelector("#event1Description").innerText= response.events[0].description;
+document.querySelector("#event1Description").innerHTML= response.events[0].description;
 //second event
 document.querySelector("#event2Title").innerText= response.events[1].title;
 document.querySelector("#event2Link").href= response.events[1].url.public;
 document.querySelector("#event2Img").src= response.events[1].featured_image;
-document.querySelector("#event2Description").innerText= response.events[1].description;
+document.querySelector("#event2Description").innerHTML= response.events[1].description;
 //third event
 document.querySelector("#event3Title").innerText= response.events[2].title;
 document.querySelector("#event3Link").href= response.events[2].url.public;
 document.querySelector("#event3Img").src= response.events[2].featured_image;
-document.querySelector("#event1Description").innerText= response.events[2].description;
+document.querySelector("#event3Description").innerHTML= response.events[2].description;
 }
 eventRequest.send(JSON.stringify(data));
 }
