@@ -1,3 +1,4 @@
+//this basic script grabs an alert message from libguides.pratt.edu/website-dashboard. This requires admin access to update.
 window.addEventListener('load', (event) => {
   var alertLength = document.querySelector("div.lib-site-alert p").textContent.length;
 

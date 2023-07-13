@@ -27,23 +27,31 @@ eventRequest.onload = function() {
 
 //first event 
 if (response.events[0].featured_image != null){
-document.querySelector("#news-item-1").innerHTML = "<a class='post-link' href='" + response.events[0].url.public + "'><img src='" + response.events[0].featured_image + "' alt class='center-cropped'><h3 class='h4'>" + response.events[0].title + "</h3></a>";
+document.querySelector("#event1Title").innerText= response.events[0].title;
+document.querySelector("#event1Link").href= response.events[0].url.public;
+document.querySelector("#event1Img").innerHTML= "<img src='" + response.events[0].featured_image + "' alt class='img-signage' >"
+document.querySelector("#event1Description").innerHTML= response.events[0].description;
 } else {
  document.querySelector("#news-item-1").remove(); 
 }
 //second event
 if (response.events[1].featured_image != null){
-document.querySelector("#news-item-2").innerHTML = "<a class='post-link' href='" + response.events[1].url.public + "'><img src='" + response.events[1].featured_image + "' alt class='center-cropped'><h3 class='h4'>" + response.events[1].title + "</h3></a>";
+document.querySelector("#event2Title").innerText= response.events[1].title;
+document.querySelector("#event2Link").href= response.events[1].url.public;
+document.querySelector("#event2Img").innerHTML= "<img src='" + response.events[1].featured_image + "' alt class='img-signage' >"
+document.querySelector("#event2Description").innerHTML= response.events[1].description;
 }
 else{
   document.querySelector("#news-item-2").remove();
 }
 //third event
 if (response.events[2].featured_image != null){
-document.querySelector("#news-item-3").innerHTML = "<a class='post-link' href='" + response.events[2].url.public + "'><img src='" + response.events[2].featured_image + "' alt class='center-cropped'><h3 class='h4'>" + response.events[2].title + "</h3></a>";
+document.querySelector("#event3Title").innerText= response.events[2].title;
+document.querySelector("#event3Link").href= response.events[2].url.public;
+document.querySelector("#event3Img").innerHTML= "<img src='" + response.events[2].featured_image + "' alt class='img-signage' >"
+document.querySelector("#event3Description").innerHTML= response.events[2].description;
 }
-else
-  {document.querySelector("#news-item-3").remove()}
+else{document.querySelector("#news-item-3").remove()}
 }
 eventRequest.send(JSON.stringify(data));
 }
