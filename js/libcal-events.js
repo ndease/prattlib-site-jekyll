@@ -1,8 +1,8 @@
 var token; // in global scope.
 var data = {
   "grant_type":"client_credentials",
-  "client_id": "INSERT CLIENT ID HERE",
-  "client_secret": "INSERT SECRET HERE"
+  "client_id": "INSERT HERE",
+  "client_secret": "INSERT HERE"
 }; //note that this secret is for a read only app!
 
 // construct an HTTP request

@@ -24,53 +24,6 @@ layout: digital-signage
               </div>
             </div>
           </div>
-           <!-- News item 1 -->
-          <div class="carousel-item news-slide">
-          <h2 class="h1 text-center">Library News</h2>
-            <div class="">
-            <div class="sign-column">
-                <a id="event1Link" href>
-                  <span id="event1Img"></span>
-                  <h3 id="event1Title" class="h3"></h3></a>
-                  </div>
-                  <div class="sign-column post-excerpt">
-                <span class="post-category">News</span>
-                <span class="eventDesc" id="event1Description"></span>
-                </div>
-                </div>
-                </div>
-            <!-- News item 2 -->
-            <div class="carousel-item news-slide">
-            <h2 class="h1 text-center">Library News</h2>
-            <div class="">
-            <div class="sign-column">
-                <a id="event2Link" href>
-                  <span id="event2Img"></span>
-                  <h3 id="event2Title" class="h3"></h3></a>
-                  </div>
-                  <div class="sign-column post-excerpt">
-                <span class="post-category">News</span>
-                <span class="eventDesc" id="event2Description"></span>
-                </div>
-                </div>
-                </div>
-
-            <!-- News item 3 -->
-            <div class="carousel-item news-slide">
-          <h2 class="h1 text-center">Library News</h2>
-            <div class="">
-            <div class="sign-column">
-                <a id="event3Link" href>
-                  <span id="event3Img"></span>
-                  <h3 id="event3Title" class="h3"></h3></a>
-                  </div>
-                  <div class="sign-column post-excerpt">
-                <span class="post-category">News</span>
-                <span class="eventDesc" id="event3Description"></span>
-                </div>
-                </div>
-                </div>
-
           <div class="carousel-item">
             <h2 class="h1">Connect with us!</h2>
             <div class="">
@@ -94,4 +47,6 @@ layout: digital-signage
           {% include alert.html%}
           </div>
           </div>
+<!-- libcal event api for grabbing images/descriptions-->
+<script src="{{ '/js/libcal-events-signage.js' | absolute_url | append: cacheBust }}"></script>
 </main>

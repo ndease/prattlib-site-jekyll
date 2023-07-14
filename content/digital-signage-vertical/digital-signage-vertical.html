@@ -24,59 +24,6 @@ layout: digital-signage
             </div>
           <img class="qr-code" src="{{site_url}}/img/hours-qrcode.png" alt="">
           </div>
-          <!-- <div class="carousel-item">
-            <div id="api_today_cid10470_12017_iid4676"></div>
-            <script src="https://api3.libcal.com/api_events.php?iid=4676&m=today&cid=10470_12017&audience=&c=&d=&simple=ul_date&context=object&format=js">
-            </script>
-            </div> -->
-
-            <!-- News item 1 -->
-          <div id="news-item-1" class="carousel-item news-slide">
-          <h2 class="h1 text-center">Library News</h2>
-            <div class="">
-            <div class="col-12">
-                <a id="event1Link" href>
-                  <span id="event1Img"></span>
-                  <h3 id="event1Title" class="h3"></h3></a>
-                  </div>
-                  <div class="col-12 post-excerpt">
-                <span class="post-category">News</span>
-                <span class="eventDesc" id="event1Description"></span>
-                </div>
-                </div>
-                </div>
-            <!-- News item 2 -->
-            <div id="news-item-2" class="carousel-item news-slide">
-            <h2 class="h1 text-center">Library News</h2>
-            <div class="">
-            <div class="col-12">
-                <a id="event2Link" href>
-                  <span id="event2Img"></span>
-                  <h3 id="event2Title" class="h3"></h3></a>
-                  </div>
-                  <div class="col-12 post-excerpt">
-                <span class="post-category">News</span>
-                <span class="eventDesc" id="event2Description"></span>
-                </div>
-                </div>
-                </div>
-
-            <!-- News item 3 -->
-            <div id="news-item-3" class="carousel-item news-slide">
-          <h2 class="h1 text-center">Library News</h2>
-            <div class="">
-            <div class="col-12">
-                <a id="event3Link" href>
-                  <span id="event3Img"></span>
-                  <h3 id="event3Title" class="h3"></h3></a>
-                  </div>
-                  <div class="col-12 post-excerpt">
-                <span class="post-category">News</span>
-                <span class="eventDesc" id="event3Description"></span>
-                </div>
-                </div>
-                </div>
-
           <div class="carousel-item">
             <h2 class="h1">Connect with us!</h2>
             <div class="">
@@ -100,4 +47,6 @@ layout: digital-signage
           {% include alert.html%}
           </div>
           </div>
+<!-- libcal event api for grabbing images/descriptions-->
+<script src="{{ '/js/libcal-events-signage-vertical.js' | absolute_url | append: cacheBust }}"></script>
 </main>
